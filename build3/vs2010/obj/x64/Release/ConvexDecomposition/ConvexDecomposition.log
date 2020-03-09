@@ -1,0 +1,24 @@
+﻿cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
+cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
+  bestfit.cpp
+cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
+  bestfitobb.cpp
+cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
+  cd_hull.cpp
+cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
+  cd_wavefront.cpp
+cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
+  concavity.cpp
+cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
+  ConvexBuilder.cpp
+cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
+  ConvexDecomposition.cpp
+cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
+  fitsphere.cpp
+  float_math.cpp
+  meshvolume.cpp
+  planetri.cpp
+  raytri.cpp
+  splitplane.cpp
+  vlookup.cpp
+  ConvexDecomposition.vcxproj -> D:\Programming\Bullet\bullet3-2.88\build3\vs2010\..\..\bin\ConvexDecomposition_vs2010_x64_release.lib

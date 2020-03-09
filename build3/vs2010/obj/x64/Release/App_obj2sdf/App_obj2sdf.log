@@ -1,0 +1,16 @@
+﻿cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
+cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
+  obj2sdf.cpp
+cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
+  b3ResourcePath.cpp
+cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
+  tiny_obj_loader.cpp
+d:\programming\bullet\bullet3-2.88\examples\thirdpartylibs\wavefront\tiny_obj_loader.cpp(441): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(2263): note: see declaration of 'sscanf'
+d:\programming\bullet\bullet3-2.88\examples\thirdpartylibs\wavefront\tiny_obj_loader.cpp(759): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(2263): note: see declaration of 'sscanf'
+d:\programming\bullet\bullet3-2.88\examples\thirdpartylibs\wavefront\tiny_obj_loader.cpp(778): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(2263): note: see declaration of 'sscanf'
+d:\programming\bullet\bullet3-2.88\examples\thirdpartylibs\wavefront\tiny_obj_loader.cpp(841): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(2263): note: see declaration of 'sscanf'
+  App_obj2sdf.vcxproj -> D:\Programming\Bullet\bullet3-2.88\build3\vs2010\..\..\bin\App_obj2sdf_vs2010_x64_release.exe

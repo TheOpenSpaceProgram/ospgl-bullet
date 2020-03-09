@@ -1,0 +1,30 @@
+﻿cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
+  test.c
+cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
+cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
+  PhysicsClient.cpp
+cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
+  PhysicsClientSharedMemory.cpp
+cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
+  PhysicsClientSharedMemory_C_API.cpp
+cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
+  PhysicsClientTCP.cpp
+cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
+  PhysicsClientTCP_C_API.cpp
+cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
+  PhysicsClientC_API.cpp
+cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
+  Win32SharedMemory.cpp
+cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
+  PosixSharedMemory.cpp
+  b3ResourcePath.cpp
+  PhysicsDirect.cpp
+  b3Clock.cpp
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\stdint.h(56): warning C4005: 'UINT8_MAX': macro redefinition (compiling source file ..\..\examples\SharedMemory\PhysicsClientTCP.cpp)
+  d:\programming\bullet\bullet3-2.88\examples\thirdpartylibs\clsocket\src\host.h(107): note: see previous definition of 'UINT8_MAX' (compiling source file ..\..\examples\SharedMemory\PhysicsClientTCP.cpp)
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\stdint.h(57): warning C4005: 'UINT16_MAX': macro redefinition (compiling source file ..\..\examples\SharedMemory\PhysicsClientTCP.cpp)
+  d:\programming\bullet\bullet3-2.88\examples\thirdpartylibs\clsocket\src\host.h(110): note: see previous definition of 'UINT16_MAX' (compiling source file ..\..\examples\SharedMemory\PhysicsClientTCP.cpp)
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\stdint.h(58): warning C4005: 'UINT32_MAX': macro redefinition (compiling source file ..\..\examples\SharedMemory\PhysicsClientTCP.cpp)
+  d:\programming\bullet\bullet3-2.88\examples\thirdpartylibs\clsocket\src\host.h(113): note: see previous definition of 'UINT32_MAX' (compiling source file ..\..\examples\SharedMemory\PhysicsClientTCP.cpp)
+     Creating library ..\..\bin\Test_PhysicsClientTCP_vs2010_x64_release.lib and object ..\..\bin\Test_PhysicsClientTCP_vs2010_x64_release.exp
+  Test_PhysicsClientTCP.vcxproj -> D:\Programming\Bullet\bullet3-2.88\build3\vs2010\..\..\bin\Test_PhysicsClientTCP_vs2010_x64_release.exe

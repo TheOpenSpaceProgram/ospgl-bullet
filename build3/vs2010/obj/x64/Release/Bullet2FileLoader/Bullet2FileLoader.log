@@ -1,0 +1,12 @@
+﻿cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
+cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
+  b3BulletFile.cpp
+cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
+  b3Chunk.cpp
+cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
+  b3DNA.cpp
+cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
+  b3File.cpp
+cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
+  b3Serializer.cpp
+  Bullet2FileLoader.vcxproj -> D:\Programming\Bullet\bullet3-2.88\build3\vs2010\..\..\bin\Bullet2FileLoader_vs2010_x64_release.lib

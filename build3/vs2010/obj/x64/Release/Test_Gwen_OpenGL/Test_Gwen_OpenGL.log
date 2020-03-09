@@ -1,0 +1,108 @@
+﻿cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
+  gl.c
+cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
+cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
+  OpenSans.cpp
+cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
+  TwFonts.cpp
+cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
+  LoadShader.cpp
+cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
+  GLPrimitiveRenderer.cpp
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\yvals.h(209): warning STL4000: _STATIC_CPPLIB is deprecated and will be REMOVED.
+cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
+  fontstash.cpp
+cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
+  opengl_fontstashcallbacks.cpp
+cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
+  b3Clock.cpp
+cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
+  stb_image_write.cpp
+  Button.cpp
+d:\programming\bullet\bullet3-2.88\examples\thirdpartylibs\stb_image\stb_image_write.h(183): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. (compiling source file ..\..\examples\ThirdPartyLibs\stb_image\stb_image_write.cpp)
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(208): note: see declaration of 'fopen' (compiling source file ..\..\examples\ThirdPartyLibs\stb_image\stb_image_write.cpp)
+d:\programming\bullet\bullet3-2.88\examples\thirdpartylibs\stb_image\stb_image_write.h(588): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. (compiling source file ..\..\examples\ThirdPartyLibs\stb_image\stb_image_write.cpp)
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(208): note: see declaration of 'fopen' (compiling source file ..\..\examples\ThirdPartyLibs\stb_image\stb_image_write.cpp)
+  Checkbox.cpp
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\yvals.h(209): warning STL4000: _STATIC_CPPLIB is deprecated and will be REMOVED.
+  ComboBox.cpp
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\yvals.h(209): warning STL4000: _STATIC_CPPLIB is deprecated and will be REMOVED.
+  CrossSplitter.cpp
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\yvals.h(209): warning STL4000: _STATIC_CPPLIB is deprecated and will be REMOVED.
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\yvals.h(209): warning STL4000: _STATIC_CPPLIB is deprecated and will be REMOVED.
+  GroupBox.cpp
+  ImagePanel.cpp
+d:\programming\bullet\bullet3-2.88\examples\openglwindow\fontstash.cpp(206): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(208): note: see declaration of 'fopen'
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\yvals.h(209): warning STL4000: _STATIC_CPPLIB is deprecated and will be REMOVED.
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\yvals.h(209): warning STL4000: _STATIC_CPPLIB is deprecated and will be REMOVED.
+  Label.cpp
+  ListBox.cpp
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\yvals.h(209): warning STL4000: _STATIC_CPPLIB is deprecated and will be REMOVED.
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\yvals.h(209): warning STL4000: _STATIC_CPPLIB is deprecated and will be REMOVED.
+  MenuStrip.cpp
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\yvals.h(209): warning STL4000: _STATIC_CPPLIB is deprecated and will be REMOVED.
+  Numeric.cpp
+  OpenGLSample.cpp
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\yvals.h(209): warning STL4000: _STATIC_CPPLIB is deprecated and will be REMOVED.
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\yvals.h(209): warning STL4000: _STATIC_CPPLIB is deprecated and will be REMOVED.
+  PanelListPanel.cpp
+  ProgressBar.cpp
+  Properties.cpp
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\yvals.h(209): warning STL4000: _STATIC_CPPLIB is deprecated and will be REMOVED.
+  RadioButton.cpp
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\yvals.h(209): warning STL4000: _STATIC_CPPLIB is deprecated and will be REMOVED.
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\yvals.h(209): warning STL4000: _STATIC_CPPLIB is deprecated and will be REMOVED.
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\yvals.h(209): warning STL4000: _STATIC_CPPLIB is deprecated and will be REMOVED.
+  ScrollControl.cpp
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\yvals.h(209): warning STL4000: _STATIC_CPPLIB is deprecated and will be REMOVED.
+d:\programming\bullet\bullet3-2.88\test\gwenopengltest\openglsample.cpp(322): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(2263): note: see declaration of 'sscanf'
+d:\programming\bullet\bullet3-2.88\test\gwenopengltest\openglsample.cpp(330): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1774): note: see declaration of 'sprintf'
+d:\programming\bullet\bullet3-2.88\test\gwenopengltest\openglsample.cpp(334): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1774): note: see declaration of 'sprintf'
+  Slider.cpp
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\yvals.h(209): warning STL4000: _STATIC_CPPLIB is deprecated and will be REMOVED.
+  StatusBar.cpp
+  TabControl.cpp
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\yvals.h(209): warning STL4000: _STATIC_CPPLIB is deprecated and will be REMOVED.
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\yvals.h(209): warning STL4000: _STATIC_CPPLIB is deprecated and will be REMOVED.
+  TextBox.cpp
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\yvals.h(209): warning STL4000: _STATIC_CPPLIB is deprecated and will be REMOVED.
+  TreeControl.cpp
+  UnitTest.cpp
+  GLFWOpenGLWindow.cpp
+  Win32OpenGLWindow.cpp
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\yvals.h(209): warning STL4000: _STATIC_CPPLIB is deprecated and will be REMOVED.
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\yvals.h(209): warning STL4000: _STATIC_CPPLIB is deprecated and will be REMOVED.
+  Win32Window.cpp
+libcpmt.lib(xthrow.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MT_StaticRelease' doesn't match value 'MD_DynamicRelease' in TwFonts.obj
+libcpmt.lib(xlock.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MT_StaticRelease' doesn't match value 'MD_DynamicRelease' in TwFonts.obj
+libcpmt.lib(locale0.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MT_StaticRelease' doesn't match value 'MD_DynamicRelease' in TwFonts.obj
+libcpmt.lib(raisehan.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MT_StaticRelease' doesn't match value 'MD_DynamicRelease' in TwFonts.obj
+libcpmt.lib(xonce.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MT_StaticRelease' doesn't match value 'MD_DynamicRelease' in TwFonts.obj
+libcpmt.lib(syserror.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MT_StaticRelease' doesn't match value 'MD_DynamicRelease' in TwFonts.obj
+libcpmt.lib(ios.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MT_StaticRelease' doesn't match value 'MD_DynamicRelease' in TwFonts.obj
+libcpmt.lib(StlLCMapStringA.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MT_StaticRelease' doesn't match value 'MD_DynamicRelease' in TwFonts.obj
+libcpmt.lib(StlLCMapStringW.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MT_StaticRelease' doesn't match value 'MD_DynamicRelease' in TwFonts.obj
+libcpmt.lib(locale.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MT_StaticRelease' doesn't match value 'MD_DynamicRelease' in TwFonts.obj
+libcpmt.lib(iosptrs.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MT_StaticRelease' doesn't match value 'MD_DynamicRelease' in TwFonts.obj
+libcpmt.lib(winapisupp.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MT_StaticRelease' doesn't match value 'MD_DynamicRelease' in TwFonts.obj
+libcpmt.lib(winapinls.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MT_StaticRelease' doesn't match value 'MD_DynamicRelease' in TwFonts.obj
+libcpmt.lib(wlocale.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MT_StaticRelease' doesn't match value 'MD_DynamicRelease' in TwFonts.obj
+libcpmt.lib(xlocale.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MT_StaticRelease' doesn't match value 'MD_DynamicRelease' in TwFonts.obj
+libcpmt.lib(xdateord.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MT_StaticRelease' doesn't match value 'MD_DynamicRelease' in TwFonts.obj
+libcpmt.lib(StlCompareStringA.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MT_StaticRelease' doesn't match value 'MD_DynamicRelease' in TwFonts.obj
+libcpmt.lib(StlCompareStringW.obj) : error LNK2038: mismatch detected for 'RuntimeLibrary': value 'MT_StaticRelease' doesn't match value 'MD_DynamicRelease' in TwFonts.obj
+msvcprt.lib(MSVCP140.dll) : error LNK2005: "public: __cdecl std::_Lockit::_Lockit(int)" (??0_Lockit@std@@QEAA@H@Z) already defined in libcpmt.lib(xlock.obj)
+msvcprt.lib(MSVCP140.dll) : error LNK2005: "public: __cdecl std::_Lockit::~_Lockit(void)" (??1_Lockit@std@@QEAA@XZ) already defined in libcpmt.lib(xlock.obj)
+msvcprt.lib(MSVCP140.dll) : error LNK2005: "public: __cdecl std::locale::id::operator unsigned __int64(void)" (??Bid@locale@std@@QEAA_KXZ) already defined in libcpmt.lib(locale.obj)
+msvcprt.lib(MSVCP140.dll) : error LNK2005: "public: char const * __cdecl std::ctype<wchar_t>::widen(char const *,char const *,wchar_t *)const " (?widen@?$ctype@_W@std@@QEBAPEBDPEBD0PEA_W@Z) already defined in libcpmt.lib(wlocale.obj)
+msvcprt.lib(MSVCP140.dll) : error LNK2005: "public: static unsigned __int64 __cdecl std::ctype<wchar_t>::_Getcat(class std::locale::facet const * *,class std::locale const *)" (?_Getcat@?$ctype@_W@std@@SA_KPEAPEBVfacet@locale@2@PEBV42@@Z) already defined in libcpmt.lib(wlocale.obj)
+msvcprt.lib(MSVCP140.dll) : error LNK2005: "public: virtual __cdecl std::basic_streambuf<char,struct std::char_traits<char> >::~basic_streambuf<char,struct std::char_traits<char> >(void)" (??1?$basic_streambuf@DU?$char_traits@D@std@@@std@@UEAA@XZ) already defined in PanelListPanel.obj
+msvcprt.lib(MSVCP140.dll) : error LNK2005: "protected: char * __cdecl std::basic_streambuf<char,struct std::char_traits<char> >::_Pninc(void)" (?_Pninc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IEAAPEADXZ) already defined in libcpmt.lib(locale.obj)
+msvcprt.lib(MSVCP140.dll) : error LNK2005: "public: virtual __cdecl std::basic_ios<char,struct std::char_traits<char> >::~basic_ios<char,struct std::char_traits<char> >(void)" (??1?$basic_ios@DU?$char_traits@D@std@@@std@@UEAA@XZ) already defined in PanelListPanel.obj
+msvcprt.lib(MSVCP140.dll) : error LNK2005: "public: virtual __cdecl std::basic_ostream<char,struct std::char_traits<char> >::~basic_ostream<char,struct std::char_traits<char> >(void)" (??1?$basic_ostream@DU?$char_traits@D@std@@@std@@UEAA@XZ) already defined in PanelListPanel.obj
+msvcprt.lib(MSVCP140.dll) : error LNK2005: "public: class std::basic_ostream<char,struct std::char_traits<char> > & __cdecl std::basic_ostream<char,struct std::char_traits<char> >::operator<<(int)" (??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@H@Z) already defined in PanelListPanel.obj
+..\..\bin\Test_Gwen_OpenGL_vs2010_x64_release.exe : fatal error LNK1169: one or more multiply defined symbols found

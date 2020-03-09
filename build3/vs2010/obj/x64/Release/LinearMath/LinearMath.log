@@ -1,0 +1,24 @@
+﻿cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
+cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
+  btAlignedAllocator.cpp
+cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
+  btConvexHull.cpp
+cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
+  btConvexHullComputer.cpp
+cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
+  btGeometryUtil.cpp
+cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
+  btPolarDecomposition.cpp
+cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
+  btQuickprof.cpp
+cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
+  btSerializer.cpp
+cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
+  btSerializer64.cpp
+  btThreads.cpp
+  btVector3.cpp
+  btTaskScheduler.cpp
+  btThreadSupportPosix.cpp
+  btThreadSupportWin32.cpp
+btVector3.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+  LinearMath.vcxproj -> D:\Programming\Bullet\bullet3-2.88\build3\vs2010\..\..\bin\LinearMath_vs2010_x64_release.lib

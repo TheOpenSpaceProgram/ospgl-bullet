@@ -1,0 +1,155 @@
+﻿cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
+  gl.c
+cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
+cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
+  PhysicsClientUDP.cpp
+cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
+  PhysicsClientUDP_C_API.cpp
+cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
+  PhysicsClientTCP.cpp
+cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
+  PhysicsClientTCP_C_API.cpp
+cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
+  collisionFilterPlugin.cpp
+cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
+  pdControlPlugin.cpp
+cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
+  b3RobotSimulatorClientAPI_NoGUI.cpp
+cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
+  b3RobotSimulatorClientAPI_NoDirect.cpp
+  IKTrajectoryHelper.cpp
+  tinyRendererPlugin.cpp
+  TinyRendererVisualShapeConverter.cpp
+  SimpleCamera.cpp
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\stdint.h(56): warning C4005: 'UINT8_MAX': macro redefinition (compiling source file ..\..\examples\SharedMemory\PhysicsClientTCP.cpp)
+  d:\programming\bullet\bullet3-2.88\examples\thirdpartylibs\clsocket\src\host.h(107): note: see previous definition of 'UINT8_MAX' (compiling source file ..\..\examples\SharedMemory\PhysicsClientTCP.cpp)
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\stdint.h(57): warning C4005: 'UINT16_MAX': macro redefinition (compiling source file ..\..\examples\SharedMemory\PhysicsClientTCP.cpp)
+  d:\programming\bullet\bullet3-2.88\examples\thirdpartylibs\clsocket\src\host.h(110): note: see previous definition of 'UINT16_MAX' (compiling source file ..\..\examples\SharedMemory\PhysicsClientTCP.cpp)
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\stdint.h(58): warning C4005: 'UINT32_MAX': macro redefinition (compiling source file ..\..\examples\SharedMemory\PhysicsClientTCP.cpp)
+  d:\programming\bullet\bullet3-2.88\examples\thirdpartylibs\clsocket\src\host.h(113): note: see previous definition of 'UINT32_MAX' (compiling source file ..\..\examples\SharedMemory\PhysicsClientTCP.cpp)
+  geometry.cpp
+  model.cpp
+d:\programming\bullet\bullet3-2.88\examples\sharedmemory\physicsclientudp.cpp(167): warning C4477: 'printf' : format string '%lu' requires an argument of type 'unsigned long', but variadic argument 1 has type 'size_t'
+  d:\programming\bullet\bullet3-2.88\examples\sharedmemory\physicsclientudp.cpp(167): note: consider using '%zu' in the format string
+d:\programming\bullet\bullet3-2.88\examples\sharedmemory\physicsclientudp.cpp(223): warning C4477: 'printf' : format string '%lu' requires an argument of type 'unsigned long', but variadic argument 1 has type 'size_t'
+  d:\programming\bullet\bullet3-2.88\examples\sharedmemory\physicsclientudp.cpp(223): note: consider using '%zu' in the format string
+  tgaimage.cpp
+  our_gl.cpp
+  TinyRenderer.cpp
+  InProcessMemory.cpp
+  PhysicsClient.cpp
+  PhysicsServer.cpp
+  PhysicsServerSharedMemory.cpp
+  PhysicsDirect.cpp
+  PhysicsDirectC_API.cpp
+  PhysicsServerCommandProcessor.cpp
+  b3PluginManager.cpp
+  PhysicsClientSharedMemory.cpp
+  PhysicsClientSharedMemory_C_API.cpp
+  PhysicsClientC_API.cpp
+  Win32SharedMemory.cpp
+  PosixSharedMemory.cpp
+  b3ResourcePath.cpp
+  RobotLoggingUtil.cpp
+  b3Clock.cpp
+  ChromeTraceUtil.cpp
+  tinyxml2.cpp
+  tiny_obj_loader.cpp
+  stb_image.cpp
+d:\programming\bullet\bullet3-2.88\examples\thirdpartylibs\stb_image\stb_image.cpp(220): warning C4312: 'type cast': conversion from 'int' to 'unsigned char *' of greater size
+d:\programming\bullet\bullet3-2.88\examples\thirdpartylibs\stb_image\stb_image.cpp(228): warning C4312: 'type cast': conversion from 'int' to 'unsigned char *' of greater size
+d:\programming\bullet\bullet3-2.88\examples\thirdpartylibs\stb_image\stb_image.cpp(226): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(208): note: see declaration of 'fopen'
+d:\programming\bullet\bullet3-2.88\examples\thirdpartylibs\stb_image\stb_image.cpp(268): warning C4312: 'type cast': conversion from 'int' to 'float *' of greater size
+d:\programming\bullet\bullet3-2.88\examples\thirdpartylibs\stb_image\stb_image.cpp(290): warning C4312: 'type cast': conversion from 'int' to 'float *' of greater size
+d:\programming\bullet\bullet3-2.88\examples\thirdpartylibs\stb_image\stb_image.cpp(288): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(208): note: see declaration of 'fopen'
+d:\programming\bullet\bullet3-2.88\examples\thirdpartylibs\stb_image\stb_image.cpp(326): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(208): note: see declaration of 'fopen'
+d:\programming\bullet\bullet3-2.88\examples\thirdpartylibs\stb_image\stb_image.cpp(524): warning C4312: 'type cast': conversion from 'int' to 'unsigned char *' of greater size
+d:\programming\bullet\bullet3-2.88\examples\thirdpartylibs\stb_image\stb_image.cpp(601): warning C4312: 'type cast': conversion from 'int' to 'float *' of greater size
+d:\programming\bullet\bullet3-2.88\examples\thirdpartylibs\stb_image\stb_image.cpp(628): warning C4312: 'type cast': conversion from 'int' to 'unsigned char *' of greater size
+d:\programming\bullet\bullet3-2.88\examples\thirdpartylibs\stb_image\stb_image.cpp(1643): warning C4312: 'type cast': conversion from 'int' to 'unsigned char *' of greater size
+d:\programming\bullet\bullet3-2.88\examples\thirdpartylibs\stb_image\stb_image.cpp(1680): warning C4312: 'type cast': conversion from 'int' to 'unsigned char *' of greater size
+d:\programming\bullet\bullet3-2.88\examples\thirdpartylibs\stb_image\stb_image.cpp(1707): warning C4312: 'type cast': conversion from 'int' to 'unsigned char *' of greater size
+d:\programming\bullet\bullet3-2.88\examples\thirdpartylibs\stb_image\stb_image.cpp(2851): warning C4312: 'type cast': conversion from 'int' to 'unsigned char *' of greater size
+d:\programming\bullet\bullet3-2.88\examples\thirdpartylibs\stb_image\stb_image.cpp(2984): warning C4312: 'type cast': conversion from 'int' to 'unsigned char *' of greater size
+d:\programming\bullet\bullet3-2.88\examples\thirdpartylibs\stb_image\stb_image.cpp(2990): warning C4312: 'type cast': conversion from 'int' to 'unsigned char *' of greater size
+d:\programming\bullet\bullet3-2.88\examples\thirdpartylibs\stb_image\stb_image.cpp(3001): warning C4312: 'type cast': conversion from 'int' to 'unsigned char *' of greater size
+d:\programming\bullet\bullet3-2.88\examples\thirdpartylibs\stb_image\stb_image.cpp(3003): warning C4312: 'type cast': conversion from 'int' to 'unsigned char *' of greater size
+d:\programming\bullet\bullet3-2.88\examples\thirdpartylibs\stb_image\stb_image.cpp(3014): warning C4312: 'type cast': conversion from 'int' to 'unsigned char *' of greater size
+d:\programming\bullet\bullet3-2.88\examples\thirdpartylibs\stb_image\stb_image.cpp(3058): warning C4312: 'type cast': conversion from 'int' to 'unsigned char *' of greater size
+d:\programming\bullet\bullet3-2.88\examples\thirdpartylibs\stb_image\stb_image.cpp(3062): warning C4312: 'type cast': conversion from 'int' to 'unsigned char *' of greater size
+d:\programming\bullet\bullet3-2.88\examples\thirdpartylibs\stb_image\stb_image.cpp(3085): warning C4312: 'type cast': conversion from 'int' to 'unsigned char *' of greater size
+d:\programming\bullet\bullet3-2.88\examples\thirdpartylibs\stb_image\stb_image.cpp(3092): warning C4312: 'type cast': conversion from 'int' to 'unsigned char *' of greater size
+d:\programming\bullet\bullet3-2.88\examples\thirdpartylibs\stb_image\stb_image.cpp(3110): warning C4312: 'type cast': conversion from 'int' to 'unsigned char *' of greater size
+d:\programming\bullet\bullet3-2.88\examples\thirdpartylibs\stb_image\stb_image.cpp(3164): warning C4312: 'type cast': conversion from 'int' to 'unsigned char *' of greater size
+  Jacobian.cpp
+d:\programming\bullet\bullet3-2.88\examples\thirdpartylibs\stb_image\stb_image.cpp(3380): warning C4312: 'type cast': conversion from 'int' to 'unsigned char *' of greater size
+d:\programming\bullet\bullet3-2.88\examples\thirdpartylibs\stb_image\stb_image.cpp(3391): warning C4312: 'type cast': conversion from 'int' to 'unsigned char *' of greater size
+d:\programming\bullet\bullet3-2.88\examples\thirdpartylibs\stb_image\stb_image.cpp(3396): warning C4312: 'type cast': conversion from 'int' to 'unsigned char *' of greater size
+d:\programming\bullet\bullet3-2.88\examples\thirdpartylibs\stb_image\stb_image.cpp(3577): warning C4312: 'type cast': conversion from 'int' to 'unsigned char *' of greater size
+d:\programming\bullet\bullet3-2.88\examples\thirdpartylibs\stb_image\stb_image.cpp(3581): warning C4312: 'type cast': conversion from 'int' to 'unsigned char *' of greater size
+d:\programming\bullet\bullet3-2.88\examples\thirdpartylibs\stb_image\stb_image.cpp(3589): warning C4312: 'type cast': conversion from 'int' to 'unsigned char *' of greater size
+d:\programming\bullet\bullet3-2.88\examples\thirdpartylibs\stb_image\stb_image.cpp(3597): warning C4312: 'type cast': conversion from 'int' to 'unsigned char *' of greater size
+d:\programming\bullet\bullet3-2.88\examples\thirdpartylibs\stb_image\stb_image.cpp(3610): warning C4312: 'type cast': conversion from 'int' to 'unsigned char *' of greater size
+d:\programming\bullet\bullet3-2.88\examples\thirdpartylibs\stb_image\stb_image.cpp(3627): warning C4312: 'type cast': conversion from 'int' to 'unsigned char *' of greater size
+d:\programming\bullet\bullet3-2.88\examples\thirdpartylibs\stb_image\stb_image.cpp(3631): warning C4312: 'type cast': conversion from 'int' to 'unsigned char *' of greater size
+d:\programming\bullet\bullet3-2.88\examples\thirdpartylibs\stb_image\stb_image.cpp(3795): warning C4312: 'type cast': conversion from 'int' to 'unsigned char *' of greater size
+d:\programming\bullet\bullet3-2.88\examples\thirdpartylibs\stb_image\stb_image.cpp(3824): warning C4312: 'type cast': conversion from 'int' to 'unsigned char *' of greater size
+d:\programming\bullet\bullet3-2.88\examples\thirdpartylibs\stb_image\stb_image.cpp(3835): warning C4312: 'type cast': conversion from 'int' to 'unsigned char *' of greater size
+d:\programming\bullet\bullet3-2.88\examples\thirdpartylibs\stb_image\stb_image.cpp(3836): warning C4312: 'type cast': conversion from 'int' to 'unsigned char *' of greater size
+d:\programming\bullet\bullet3-2.88\examples\thirdpartylibs\stb_image\stb_image.cpp(3853): warning C4312: 'type cast': conversion from 'int' to 'unsigned char *' of greater size
+d:\programming\bullet\bullet3-2.88\examples\thirdpartylibs\stb_image\stb_image.cpp(3874): warning C4312: 'type cast': conversion from 'int' to 'unsigned char *' of greater size
+d:\programming\bullet\bullet3-2.88\examples\thirdpartylibs\stb_image\stb_image.cpp(3894): warning C4312: 'type cast': conversion from 'int' to 'unsigned char *' of greater size
+d:\programming\bullet\bullet3-2.88\examples\thirdpartylibs\stb_image\stb_image.cpp(3906): warning C4312: 'type cast': conversion from 'int' to 'unsigned char *' of greater size
+d:\programming\bullet\bullet3-2.88\examples\thirdpartylibs\stb_image\stb_image.cpp(3917): warning C4312: 'type cast': conversion from 'int' to 'unsigned char *' of greater size
+d:\programming\bullet\bullet3-2.88\examples\thirdpartylibs\stb_image\stb_image.cpp(3944): warning C4312: 'type cast': conversion from 'int' to 'unsigned char *' of greater size
+d:\programming\bullet\bullet3-2.88\examples\thirdpartylibs\stb_image\stb_image.cpp(3945): warning C4312: 'type cast': conversion from 'int' to 'unsigned char *' of greater size
+d:\programming\bullet\bullet3-2.88\examples\thirdpartylibs\stb_image\stb_image.cpp(4177): warning C4312: 'type cast': conversion from 'int' to 'unsigned char *' of greater size
+d:\programming\bullet\bullet3-2.88\examples\thirdpartylibs\stb_image\stb_image.cpp(4182): warning C4312: 'type cast': conversion from 'int' to 'unsigned char *' of greater size
+d:\programming\bullet\bullet3-2.88\examples\thirdpartylibs\stb_image\stb_image.cpp(4188): warning C4312: 'type cast': conversion from 'int' to 'unsigned char *' of greater size
+d:\programming\bullet\bullet3-2.88\examples\thirdpartylibs\stb_image\stb_image.cpp(4202): warning C4312: 'type cast': conversion from 'int' to 'unsigned char *' of greater size
+d:\programming\bullet\bullet3-2.88\examples\thirdpartylibs\stb_image\stb_image.cpp(4233): warning C4312: 'type cast': conversion from 'int' to 'unsigned char *' of greater size
+d:\programming\bullet\bullet3-2.88\examples\thirdpartylibs\stb_image\stb_image.cpp(4243): warning C4312: 'type cast': conversion from 'int' to 'unsigned char *' of greater size
+d:\programming\bullet\bullet3-2.88\examples\thirdpartylibs\stb_image\stb_image.cpp(4262): warning C4312: 'type cast': conversion from 'int' to 'unsigned char *' of greater size
+d:\programming\bullet\bullet3-2.88\examples\thirdpartylibs\stb_image\stb_image.cpp(4299): warning C4312: 'type cast': conversion from 'int' to 'unsigned char *' of greater size
+d:\programming\bullet\bullet3-2.88\examples\thirdpartylibs\stb_image\stb_image.cpp(4336): warning C4312: 'type cast': conversion from 'int' to 'unsigned char *' of greater size
+d:\programming\bullet\bullet3-2.88\examples\thirdpartylibs\stb_image\stb_image.cpp(4458): warning C4312: 'type cast': conversion from 'int' to 'float *' of greater size
+d:\programming\bullet\bullet3-2.88\examples\thirdpartylibs\stb_image\stb_image.cpp(4468): warning C4312: 'type cast': conversion from 'int' to 'float *' of greater size
+d:\programming\bullet\bullet3-2.88\examples\thirdpartylibs\stb_image\stb_image.cpp(4473): warning C4312: 'type cast': conversion from 'int' to 'float *' of greater size
+d:\programming\bullet\bullet3-2.88\examples\thirdpartylibs\stb_image\stb_image.cpp(4477): warning C4312: 'type cast': conversion from 'int' to 'float *' of greater size
+d:\programming\bullet\bullet3-2.88\examples\thirdpartylibs\stb_image\stb_image.cpp(4537): warning C4312: 'type cast': conversion from 'int' to 'float *' of greater size
+d:\programming\bullet\bullet3-2.88\examples\thirdpartylibs\stb_image\stb_image.cpp(4768): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(208): note: see declaration of 'fopen'
+  LinearR2.cpp
+  LinearR3.cpp
+d:\programming\bullet\bullet3-2.88\examples\thirdpartylibs\wavefront\tiny_obj_loader.cpp(441): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(2263): note: see declaration of 'sscanf'
+d:\programming\bullet\bullet3-2.88\examples\thirdpartylibs\wavefront\tiny_obj_loader.cpp(759): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(2263): note: see declaration of 'sscanf'
+d:\programming\bullet\bullet3-2.88\examples\thirdpartylibs\wavefront\tiny_obj_loader.cpp(778): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(2263): note: see declaration of 'sscanf'
+d:\programming\bullet\bullet3-2.88\examples\thirdpartylibs\wavefront\tiny_obj_loader.cpp(841): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(2263): note: see declaration of 'sscanf'
+  LinearR4.cpp
+  MatrixRmn.cpp
+  Misc.cpp
+  Node.cpp
+  Tree.cpp
+  VectorRn.cpp
+  LoadMeshFromCollada.cpp
+  LoadMeshFromObj.cpp
+  Wavefront2GLInstanceGraphicsShape.cpp
+  BulletMJCFImporter.cpp
+  BulletUrdfImporter.cpp
+  MyMultiBodyCreator.cpp
+  URDF2Bullet.cpp
+  UrdfParser.cpp
+  urdfStringSplit.cpp
+d:\programming\bullet\bullet3-2.88\examples\importers\importmjcfdemo\bulletmjcfimporter.cpp(1443): warning C4804: '>': unsafe use of type 'bool' in operation
+  b3ImportMeshUtility.cpp
+  b3PosixThreadSupport.cpp
+  b3Win32ThreadSupport.cpp
+  b3ThreadSupportInterface.cpp
+  BulletRobotics.vcxproj -> D:\Programming\Bullet\bullet3-2.88\build3\vs2010\..\..\bin\BulletRobotics_vs2010_x64_release.lib

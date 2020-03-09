@@ -1,0 +1,40 @@
+﻿cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
+  clew.c
+cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
+cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
+  b3GpuGridBroadphase.cpp
+cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
+  b3GpuParallelLinearBvh.cpp
+cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
+  b3GpuParallelLinearBvhBroadphase.cpp
+cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
+  b3GpuSapBroadphase.cpp
+cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
+  b3OpenCLUtils.cpp
+cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
+  b3ContactCache.cpp
+cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
+  b3ConvexHullContact.cpp
+cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
+  b3GjkEpa.cpp
+  b3OptimizedBvh.cpp
+  b3QuantizedBvh.cpp
+  b3StridingMeshInterface.cpp
+  b3TriangleCallback.cpp
+  b3TriangleIndexVertexArray.cpp
+  b3VoronoiSimplexSolver.cpp
+  b3BoundSearchCL.cpp
+  b3FillCL.cpp
+  b3LauncherCL.cpp
+  b3PrefixScanCL.cpp
+  b3PrefixScanFloat4CL.cpp
+  b3RadixSort32CL.cpp
+  b3GpuRaycast.cpp
+  b3GpuGenericConstraint.cpp
+  b3GpuJacobiContactSolver.cpp
+  b3GpuNarrowPhase.cpp
+  b3GpuPgsConstraintSolver.cpp
+  b3GpuPgsContactSolver.cpp
+  b3GpuRigidBodyPipeline.cpp
+  b3Solver.cpp
+  Bullet3OpenCL_clew.vcxproj -> D:\Programming\Bullet\bullet3-2.88\build3\vs2010\..\..\bin\Bullet3OpenCL_clew_vs2010_x64_release.lib

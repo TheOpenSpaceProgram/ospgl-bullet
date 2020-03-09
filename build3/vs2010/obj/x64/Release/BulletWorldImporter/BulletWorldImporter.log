@@ -1,0 +1,8 @@
+﻿cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
+cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
+  btBulletWorldImporter.cpp
+cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
+  btMultiBodyWorldImporter.cpp
+cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
+  btWorldImporter.cpp
+  BulletWorldImporter.vcxproj -> D:\Programming\Bullet\bullet3-2.88\build3\vs2010\..\..\bin\BulletWorldImporter_vs2010_x64_release.lib

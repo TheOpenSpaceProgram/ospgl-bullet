@@ -1,0 +1,6 @@
+﻿  EchoServer.cpp
+d:\programming\bullet\bullet3-2.88\examples\thirdpartylibs\clsocket\src\simplesocket.h(484): warning C4996: 'inet_ntoa': Use inet_ntop() or InetNtop() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winsock2.h(1849): note: see declaration of 'inet_ntoa'
+d:\programming\bullet\bullet3-2.88\examples\thirdpartylibs\clsocket\src\simplesocket.h(498): warning C4996: 'inet_ntoa': Use inet_ntop() or InetNtop() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winsock2.h(1849): note: see declaration of 'inet_ntoa'
+  Test_clsocket_EchoServer.vcxproj -> D:\Programming\Bullet\bullet3-2.88\build3\vs2010\..\..\bin\Test_clsocket_EchoServer_vs2010_x64_debug.exe

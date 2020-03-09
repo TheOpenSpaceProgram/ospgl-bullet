@@ -1,0 +1,10 @@
+﻿cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
+cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
+  IDMath.cpp
+cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
+  MultiBodyTree.cpp
+cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
+  MultiBodyTreeInitCache.cpp
+cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
+  MultiBodyTreeImpl.cpp
+  BulletInverseDynamics.vcxproj -> D:\Programming\Bullet\bullet3-2.88\build3\vs2010\..\..\bin\BulletInverseDynamics_vs2010_x64_release.lib

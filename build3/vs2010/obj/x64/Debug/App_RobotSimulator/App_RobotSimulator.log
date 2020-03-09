@@ -1,0 +1,26 @@
+﻿  gl.c
+  PhysicsClientUDP.cpp
+  PhysicsClientUDP_C_API.cpp
+  PhysicsClientTCP.cpp
+  PhysicsClientTCP_C_API.cpp
+  RobotSimulatorMain.cpp
+  b3RobotSimulatorClientAPI.cpp
+  MinitaurSetup.cpp
+  InProcessExampleBrowser.cpp
+  PhysicsServerExample.cpp
+  PhysicsServerExampleBullet2.cpp
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\stdint.h(56): warning C4005: 'UINT8_MAX': macro redefinition (compiling source file ..\..\examples\SharedMemory\PhysicsClientTCP.cpp)
+  d:\programming\bullet\bullet3-2.88\examples\thirdpartylibs\clsocket\src\host.h(107): note: see previous definition of 'UINT8_MAX' (compiling source file ..\..\examples\SharedMemory\PhysicsClientTCP.cpp)
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\stdint.h(57): warning C4005: 'UINT16_MAX': macro redefinition (compiling source file ..\..\examples\SharedMemory\PhysicsClientTCP.cpp)
+  d:\programming\bullet\bullet3-2.88\examples\thirdpartylibs\clsocket\src\host.h(110): note: see previous definition of 'UINT16_MAX' (compiling source file ..\..\examples\SharedMemory\PhysicsClientTCP.cpp)
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\stdint.h(58): warning C4005: 'UINT32_MAX': macro redefinition (compiling source file ..\..\examples\SharedMemory\PhysicsClientTCP.cpp)
+  d:\programming\bullet\bullet3-2.88\examples\thirdpartylibs\clsocket\src\host.h(113): note: see previous definition of 'UINT32_MAX' (compiling source file ..\..\examples\SharedMemory\PhysicsClientTCP.cpp)
+d:\programming\bullet\bullet3-2.88\src\bullet3common\b3commandlineargs.h(96): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details. (compiling source file ..\..\examples\ExampleBrowser\InProcessExampleBrowser.cpp)
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\string.h(133): note: see declaration of 'strcpy' (compiling source file ..\..\examples\ExampleBrowser\InProcessExampleBrowser.cpp)
+d:\programming\bullet\bullet3-2.88\examples\sharedmemory\physicsclientudp.cpp(167): warning C4477: 'printf' : format string '%lu' requires an argument of type 'unsigned long', but variadic argument 1 has type 'size_t'
+  d:\programming\bullet\bullet3-2.88\examples\sharedmemory\physicsclientudp.cpp(167): note: consider using '%zu' in the format string
+d:\programming\bullet\bullet3-2.88\examples\sharedmemory\physicsclientudp.cpp(223): warning C4477: 'printf' : format string '%lu' requires an argument of type 'unsigned long', but variadic argument 1 has type 'size_t'
+  d:\programming\bullet\bullet3-2.88\examples\sharedmemory\physicsclientudp.cpp(223): note: consider using '%zu' in the format string
+  SharedMemoryInProcessPhysicsC_API.cpp
+     Creating library ..\..\bin\App_RobotSimulator_vs2010_x64_debug.lib and object ..\..\bin\App_RobotSimulator_vs2010_x64_debug.exp
+  App_RobotSimulator.vcxproj -> D:\Programming\Bullet\bullet3-2.88\build3\vs2010\..\..\bin\App_RobotSimulator_vs2010_x64_debug.exe

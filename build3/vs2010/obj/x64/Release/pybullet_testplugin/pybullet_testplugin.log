@@ -1,0 +1,20 @@
+﻿cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
+cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
+  testplugin.cpp
+cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
+  PhysicsClient.cpp
+cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
+  PhysicsClientSharedMemory.cpp
+cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
+  PhysicsClientSharedMemory_C_API.cpp
+cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
+  PhysicsClientC_API.cpp
+cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
+  Win32SharedMemory.cpp
+cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
+  PosixSharedMemory.cpp
+cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
+  b3Clock.cpp
+  b3ResourcePath.cpp
+     Creating library ..\..\bin\pybullet_testplugin_vs2010_x64_release.lib and object ..\..\bin\pybullet_testplugin_vs2010_x64_release.exp
+  pybullet_testplugin.vcxproj -> D:\Programming\Bullet\bullet3-2.88\build3\vs2010\..\..\bin\pybullet_testplugin_vs2010_x64_release.dll

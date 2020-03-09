@@ -1,0 +1,12 @@
+﻿cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
+cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
+  SimpleSocket.cpp
+cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
+  ActiveSocket.cpp
+cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
+  PassiveSocket.cpp
+d:\programming\bullet\bullet3-2.88\examples\thirdpartylibs\clsocket\src\simplesocket.cpp(895): warning C4996: 'lseek': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _lseek. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\corecrt_io.h(503): note: see declaration of 'lseek'
+d:\programming\bullet\bullet3-2.88\examples\thirdpartylibs\clsocket\src\simplesocket.cpp(904): warning C4996: 'read': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _read. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\corecrt_io.h(523): note: see declaration of 'read'
+  clsocket.vcxproj -> D:\Programming\Bullet\bullet3-2.88\build3\vs2010\..\..\bin\clsocket_vs2010_x64_release.lib

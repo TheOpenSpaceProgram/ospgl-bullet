@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{137B6440-9E79-4446-BE89-920EB0AE57E7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Bullet3Geometry">
+      <UniqueIdentifier>{58D671A0-78F2-EC47-9D1A-6D0C84BAF218}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\Bullet3Geometry\b3AabbUtil.h">
+      <Filter>src\Bullet3Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Bullet3Geometry\b3ConvexHullComputer.h">
+      <Filter>src\Bullet3Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Bullet3Geometry\b3GeometryUtil.h">
+      <Filter>src\Bullet3Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\Bullet3Geometry\b3GrahamScan2dConvexHull.h">
+      <Filter>src\Bullet3Geometry</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\Bullet3Geometry\b3ConvexHullComputer.cpp">
+      <Filter>src\Bullet3Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Bullet3Geometry\b3GeometryUtil.cpp">
+      <Filter>src\Bullet3Geometry</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
