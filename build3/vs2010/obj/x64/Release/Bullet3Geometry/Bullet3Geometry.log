@@ -1,6 +1,0 @@
-﻿cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
-cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
-  b3ConvexHullComputer.cpp
-cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
-  b3GeometryUtil.cpp
-  Bullet3Geometry.vcxproj -> D:\Programming\Bullet\bullet3-2.88\build3\vs2010\..\..\bin\Bullet3Geometry_vs2010_x64_release.lib

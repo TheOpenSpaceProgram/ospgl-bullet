@@ -1,7 +1,0 @@
-﻿cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
-  main.cpp
-d:\programming\bullet\bullet3-2.88\test\enet\chat\server\main.cpp(65): warning C4477: 'printf' : format string '%lu' requires an argument of type 'unsigned long', but variadic argument 1 has type 'size_t'
-  d:\programming\bullet\bullet3-2.88\test\enet\chat\server\main.cpp(65): note: consider using '%zu' in the format string
-d:\programming\bullet\bullet3-2.88\test\enet\chat\server\main.cpp(65): warning C4477: 'printf' : format string '%s' requires an argument of type 'char *', but variadic argument 3 has type 'void *'
-d:\programming\bullet\bullet3-2.88\test\enet\chat\server\main.cpp(78): warning C4477: 'printf' : format string '%s' requires an argument of type 'char *', but variadic argument 1 has type 'void *'
-  Test_enet_chat_server.vcxproj -> D:\Programming\Bullet\bullet3-2.88\build3\vs2010\..\..\bin\Test_enet_chat_server_vs2010_x64_release.exe

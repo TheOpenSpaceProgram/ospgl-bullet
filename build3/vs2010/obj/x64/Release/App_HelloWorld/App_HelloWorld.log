@@ -1,3 +1,0 @@
-﻿cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
-  HelloWorld.cpp
-  App_HelloWorld.vcxproj -> D:\Programming\Bullet\bullet3-2.88\build3\vs2010\..\..\bin\App_HelloWorld_vs2010_x64_release.exe

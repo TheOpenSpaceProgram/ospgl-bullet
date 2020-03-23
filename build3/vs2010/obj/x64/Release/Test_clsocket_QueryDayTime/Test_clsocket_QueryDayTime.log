@@ -1,9 +1,0 @@
-﻿cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
-  QueryDayTime.cpp
-d:\programming\bullet\bullet3-2.88\examples\thirdpartylibs\clsocket\src\simplesocket.h(484): warning C4996: 'inet_ntoa': Use inet_ntop() or InetNtop() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
-  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winsock2.h(1849): note: see declaration of 'inet_ntoa'
-d:\programming\bullet\bullet3-2.88\examples\thirdpartylibs\clsocket\src\simplesocket.h(498): warning C4996: 'inet_ntoa': Use inet_ntop() or InetNtop() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
-  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winsock2.h(1849): note: see declaration of 'inet_ntoa'
-d:\programming\bullet\bullet3-2.88\test\clsocket\querydaytime.cpp(30): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1774): note: see declaration of 'sprintf'
-  Test_clsocket_QueryDayTime.vcxproj -> D:\Programming\Bullet\bullet3-2.88\build3\vs2010\..\..\bin\Test_clsocket_QueryDayTime_vs2010_x64_release.exe

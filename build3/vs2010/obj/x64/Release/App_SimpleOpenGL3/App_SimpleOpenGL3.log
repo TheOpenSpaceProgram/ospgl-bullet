@@ -1,5 +1,0 @@
-﻿cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
-  gl.c
-cl : Command line warning D9002: ignoring unknown option '/arch:SSE2'
-  main.cpp
-  App_SimpleOpenGL3.vcxproj -> D:\Programming\Bullet\bullet3-2.88\build3\vs2010\..\..\bin\App_SimpleOpenGL3_vs2010_x64_release.exe
