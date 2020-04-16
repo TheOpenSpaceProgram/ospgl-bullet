@@ -40,6 +40,9 @@ default_target: all
 .SUFFIXES: .hpux_make_needs_suffix_list
 
 
+# Command-line flag to silence nested $(MAKE).
+$(VERBOSE)MAKESILENT = -s
+
 # Suppress display of executed commands.
 $(VERBOSE).SILENT:
 
@@ -65,10 +68,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/tatjam/code/osp/cleanup/test/new-ospgl
+CMAKE_SOURCE_DIR = /home/tatjam/code/osp/new-ospgl
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/tatjam/code/osp/cleanup/test/new-ospgl
+CMAKE_BINARY_DIR = /home/tatjam/code/osp/new-ospgl
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -121,7 +124,7 @@ rebuild_cache/fast: rebuild_cache
 
 # Special rule for the target list_install_components
 list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\" \"assimp-dev\" \"libassimp5.0.0-dev\""
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\" \"assimp-dev\" \"libassimp5.0.1-dev\""
 .PHONY : list_install_components
 
 # Special rule for the target list_install_components
@@ -143,14 +146,14 @@ install/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(CMAKE_COMMAND) -E cmake_progress_start /home/tatjam/code/osp/cleanup/test/new-ospgl/CMakeFiles /home/tatjam/code/osp/cleanup/test/new-ospgl/dep/bullet3/src/BulletInverseDynamics/CMakeFiles/progress.marks
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f CMakeFiles/Makefile2 dep/bullet3/src/BulletInverseDynamics/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tatjam/code/osp/cleanup/test/new-ospgl/CMakeFiles 0
+	cd /home/tatjam/code/osp/new-ospgl && $(CMAKE_COMMAND) -E cmake_progress_start /home/tatjam/code/osp/new-ospgl/CMakeFiles /home/tatjam/code/osp/new-ospgl/dep/bullet3/src/BulletInverseDynamics/CMakeFiles/progress.marks
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dep/bullet3/src/BulletInverseDynamics/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tatjam/code/osp/new-ospgl/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f CMakeFiles/Makefile2 dep/bullet3/src/BulletInverseDynamics/clean
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dep/bullet3/src/BulletInverseDynamics/clean
 .PHONY : clean
 
 # The main clean target
@@ -160,22 +163,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f CMakeFiles/Makefile2 dep/bullet3/src/BulletInverseDynamics/preinstall
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dep/bullet3/src/BulletInverseDynamics/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f CMakeFiles/Makefile2 dep/bullet3/src/BulletInverseDynamics/preinstall
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dep/bullet3/src/BulletInverseDynamics/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/tatjam/code/osp/new-ospgl && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 dep/bullet3/src/BulletInverseDynamics/CMakeFiles/BulletInverseDynamics.dir/rule:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f CMakeFiles/Makefile2 dep/bullet3/src/BulletInverseDynamics/CMakeFiles/BulletInverseDynamics.dir/rule
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dep/bullet3/src/BulletInverseDynamics/CMakeFiles/BulletInverseDynamics.dir/rule
 .PHONY : dep/bullet3/src/BulletInverseDynamics/CMakeFiles/BulletInverseDynamics.dir/rule
 
 # Convenience name for target.
@@ -185,67 +188,67 @@ BulletInverseDynamics: dep/bullet3/src/BulletInverseDynamics/CMakeFiles/BulletIn
 
 # fast build rule for target.
 BulletInverseDynamics/fast:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/BulletInverseDynamics/CMakeFiles/BulletInverseDynamics.dir/build.make dep/bullet3/src/BulletInverseDynamics/CMakeFiles/BulletInverseDynamics.dir/build
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/BulletInverseDynamics/CMakeFiles/BulletInverseDynamics.dir/build.make dep/bullet3/src/BulletInverseDynamics/CMakeFiles/BulletInverseDynamics.dir/build
 .PHONY : BulletInverseDynamics/fast
 
 # target to build an object file
 IDMath.o:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/BulletInverseDynamics/CMakeFiles/BulletInverseDynamics.dir/build.make dep/bullet3/src/BulletInverseDynamics/CMakeFiles/BulletInverseDynamics.dir/IDMath.o
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/BulletInverseDynamics/CMakeFiles/BulletInverseDynamics.dir/build.make dep/bullet3/src/BulletInverseDynamics/CMakeFiles/BulletInverseDynamics.dir/IDMath.o
 .PHONY : IDMath.o
 
 # target to preprocess a source file
 IDMath.i:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/BulletInverseDynamics/CMakeFiles/BulletInverseDynamics.dir/build.make dep/bullet3/src/BulletInverseDynamics/CMakeFiles/BulletInverseDynamics.dir/IDMath.i
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/BulletInverseDynamics/CMakeFiles/BulletInverseDynamics.dir/build.make dep/bullet3/src/BulletInverseDynamics/CMakeFiles/BulletInverseDynamics.dir/IDMath.i
 .PHONY : IDMath.i
 
 # target to generate assembly for a file
 IDMath.s:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/BulletInverseDynamics/CMakeFiles/BulletInverseDynamics.dir/build.make dep/bullet3/src/BulletInverseDynamics/CMakeFiles/BulletInverseDynamics.dir/IDMath.s
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/BulletInverseDynamics/CMakeFiles/BulletInverseDynamics.dir/build.make dep/bullet3/src/BulletInverseDynamics/CMakeFiles/BulletInverseDynamics.dir/IDMath.s
 .PHONY : IDMath.s
 
 # target to build an object file
 MultiBodyTree.o:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/BulletInverseDynamics/CMakeFiles/BulletInverseDynamics.dir/build.make dep/bullet3/src/BulletInverseDynamics/CMakeFiles/BulletInverseDynamics.dir/MultiBodyTree.o
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/BulletInverseDynamics/CMakeFiles/BulletInverseDynamics.dir/build.make dep/bullet3/src/BulletInverseDynamics/CMakeFiles/BulletInverseDynamics.dir/MultiBodyTree.o
 .PHONY : MultiBodyTree.o
 
 # target to preprocess a source file
 MultiBodyTree.i:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/BulletInverseDynamics/CMakeFiles/BulletInverseDynamics.dir/build.make dep/bullet3/src/BulletInverseDynamics/CMakeFiles/BulletInverseDynamics.dir/MultiBodyTree.i
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/BulletInverseDynamics/CMakeFiles/BulletInverseDynamics.dir/build.make dep/bullet3/src/BulletInverseDynamics/CMakeFiles/BulletInverseDynamics.dir/MultiBodyTree.i
 .PHONY : MultiBodyTree.i
 
 # target to generate assembly for a file
 MultiBodyTree.s:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/BulletInverseDynamics/CMakeFiles/BulletInverseDynamics.dir/build.make dep/bullet3/src/BulletInverseDynamics/CMakeFiles/BulletInverseDynamics.dir/MultiBodyTree.s
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/BulletInverseDynamics/CMakeFiles/BulletInverseDynamics.dir/build.make dep/bullet3/src/BulletInverseDynamics/CMakeFiles/BulletInverseDynamics.dir/MultiBodyTree.s
 .PHONY : MultiBodyTree.s
 
 # target to build an object file
 details/MultiBodyTreeImpl.o:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/BulletInverseDynamics/CMakeFiles/BulletInverseDynamics.dir/build.make dep/bullet3/src/BulletInverseDynamics/CMakeFiles/BulletInverseDynamics.dir/details/MultiBodyTreeImpl.o
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/BulletInverseDynamics/CMakeFiles/BulletInverseDynamics.dir/build.make dep/bullet3/src/BulletInverseDynamics/CMakeFiles/BulletInverseDynamics.dir/details/MultiBodyTreeImpl.o
 .PHONY : details/MultiBodyTreeImpl.o
 
 # target to preprocess a source file
 details/MultiBodyTreeImpl.i:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/BulletInverseDynamics/CMakeFiles/BulletInverseDynamics.dir/build.make dep/bullet3/src/BulletInverseDynamics/CMakeFiles/BulletInverseDynamics.dir/details/MultiBodyTreeImpl.i
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/BulletInverseDynamics/CMakeFiles/BulletInverseDynamics.dir/build.make dep/bullet3/src/BulletInverseDynamics/CMakeFiles/BulletInverseDynamics.dir/details/MultiBodyTreeImpl.i
 .PHONY : details/MultiBodyTreeImpl.i
 
 # target to generate assembly for a file
 details/MultiBodyTreeImpl.s:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/BulletInverseDynamics/CMakeFiles/BulletInverseDynamics.dir/build.make dep/bullet3/src/BulletInverseDynamics/CMakeFiles/BulletInverseDynamics.dir/details/MultiBodyTreeImpl.s
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/BulletInverseDynamics/CMakeFiles/BulletInverseDynamics.dir/build.make dep/bullet3/src/BulletInverseDynamics/CMakeFiles/BulletInverseDynamics.dir/details/MultiBodyTreeImpl.s
 .PHONY : details/MultiBodyTreeImpl.s
 
 # target to build an object file
 details/MultiBodyTreeInitCache.o:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/BulletInverseDynamics/CMakeFiles/BulletInverseDynamics.dir/build.make dep/bullet3/src/BulletInverseDynamics/CMakeFiles/BulletInverseDynamics.dir/details/MultiBodyTreeInitCache.o
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/BulletInverseDynamics/CMakeFiles/BulletInverseDynamics.dir/build.make dep/bullet3/src/BulletInverseDynamics/CMakeFiles/BulletInverseDynamics.dir/details/MultiBodyTreeInitCache.o
 .PHONY : details/MultiBodyTreeInitCache.o
 
 # target to preprocess a source file
 details/MultiBodyTreeInitCache.i:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/BulletInverseDynamics/CMakeFiles/BulletInverseDynamics.dir/build.make dep/bullet3/src/BulletInverseDynamics/CMakeFiles/BulletInverseDynamics.dir/details/MultiBodyTreeInitCache.i
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/BulletInverseDynamics/CMakeFiles/BulletInverseDynamics.dir/build.make dep/bullet3/src/BulletInverseDynamics/CMakeFiles/BulletInverseDynamics.dir/details/MultiBodyTreeInitCache.i
 .PHONY : details/MultiBodyTreeInitCache.i
 
 # target to generate assembly for a file
 details/MultiBodyTreeInitCache.s:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/BulletInverseDynamics/CMakeFiles/BulletInverseDynamics.dir/build.make dep/bullet3/src/BulletInverseDynamics/CMakeFiles/BulletInverseDynamics.dir/details/MultiBodyTreeInitCache.s
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/BulletInverseDynamics/CMakeFiles/BulletInverseDynamics.dir/build.make dep/bullet3/src/BulletInverseDynamics/CMakeFiles/BulletInverseDynamics.dir/details/MultiBodyTreeInitCache.s
 .PHONY : details/MultiBodyTreeInitCache.s
 
 # Help Target
@@ -284,6 +287,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/tatjam/code/osp/new-ospgl && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

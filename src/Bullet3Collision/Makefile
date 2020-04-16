@@ -40,6 +40,9 @@ default_target: all
 .SUFFIXES: .hpux_make_needs_suffix_list
 
 
+# Command-line flag to silence nested $(MAKE).
+$(VERBOSE)MAKESILENT = -s
+
 # Suppress display of executed commands.
 $(VERBOSE).SILENT:
 
@@ -65,10 +68,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/tatjam/code/osp/cleanup/test/new-ospgl
+CMAKE_SOURCE_DIR = /home/tatjam/code/osp/new-ospgl
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/tatjam/code/osp/cleanup/test/new-ospgl
+CMAKE_BINARY_DIR = /home/tatjam/code/osp/new-ospgl
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -121,7 +124,7 @@ rebuild_cache/fast: rebuild_cache
 
 # Special rule for the target list_install_components
 list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\" \"assimp-dev\" \"libassimp5.0.0-dev\""
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\" \"assimp-dev\" \"libassimp5.0.1-dev\""
 .PHONY : list_install_components
 
 # Special rule for the target list_install_components
@@ -143,14 +146,14 @@ install/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(CMAKE_COMMAND) -E cmake_progress_start /home/tatjam/code/osp/cleanup/test/new-ospgl/CMakeFiles /home/tatjam/code/osp/cleanup/test/new-ospgl/dep/bullet3/src/Bullet3Collision/CMakeFiles/progress.marks
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f CMakeFiles/Makefile2 dep/bullet3/src/Bullet3Collision/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tatjam/code/osp/cleanup/test/new-ospgl/CMakeFiles 0
+	cd /home/tatjam/code/osp/new-ospgl && $(CMAKE_COMMAND) -E cmake_progress_start /home/tatjam/code/osp/new-ospgl/CMakeFiles /home/tatjam/code/osp/new-ospgl/dep/bullet3/src/Bullet3Collision/CMakeFiles/progress.marks
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dep/bullet3/src/Bullet3Collision/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tatjam/code/osp/new-ospgl/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f CMakeFiles/Makefile2 dep/bullet3/src/Bullet3Collision/clean
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dep/bullet3/src/Bullet3Collision/clean
 .PHONY : clean
 
 # The main clean target
@@ -160,22 +163,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f CMakeFiles/Makefile2 dep/bullet3/src/Bullet3Collision/preinstall
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dep/bullet3/src/Bullet3Collision/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f CMakeFiles/Makefile2 dep/bullet3/src/Bullet3Collision/preinstall
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dep/bullet3/src/Bullet3Collision/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/tatjam/code/osp/new-ospgl && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 dep/bullet3/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/rule:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f CMakeFiles/Makefile2 dep/bullet3/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/rule
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dep/bullet3/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/rule
 .PHONY : dep/bullet3/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/rule
 
 # Convenience name for target.
@@ -185,82 +188,82 @@ Bullet3Collision: dep/bullet3/src/Bullet3Collision/CMakeFiles/Bullet3Collision.d
 
 # fast build rule for target.
 Bullet3Collision/fast:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/build.make dep/bullet3/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/build
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/build.make dep/bullet3/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/build
 .PHONY : Bullet3Collision/fast
 
 # target to build an object file
 BroadPhaseCollision/b3DynamicBvh.o:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/build.make dep/bullet3/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/BroadPhaseCollision/b3DynamicBvh.o
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/build.make dep/bullet3/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/BroadPhaseCollision/b3DynamicBvh.o
 .PHONY : BroadPhaseCollision/b3DynamicBvh.o
 
 # target to preprocess a source file
 BroadPhaseCollision/b3DynamicBvh.i:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/build.make dep/bullet3/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/BroadPhaseCollision/b3DynamicBvh.i
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/build.make dep/bullet3/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/BroadPhaseCollision/b3DynamicBvh.i
 .PHONY : BroadPhaseCollision/b3DynamicBvh.i
 
 # target to generate assembly for a file
 BroadPhaseCollision/b3DynamicBvh.s:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/build.make dep/bullet3/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/BroadPhaseCollision/b3DynamicBvh.s
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/build.make dep/bullet3/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/BroadPhaseCollision/b3DynamicBvh.s
 .PHONY : BroadPhaseCollision/b3DynamicBvh.s
 
 # target to build an object file
 BroadPhaseCollision/b3DynamicBvhBroadphase.o:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/build.make dep/bullet3/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/BroadPhaseCollision/b3DynamicBvhBroadphase.o
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/build.make dep/bullet3/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/BroadPhaseCollision/b3DynamicBvhBroadphase.o
 .PHONY : BroadPhaseCollision/b3DynamicBvhBroadphase.o
 
 # target to preprocess a source file
 BroadPhaseCollision/b3DynamicBvhBroadphase.i:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/build.make dep/bullet3/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/BroadPhaseCollision/b3DynamicBvhBroadphase.i
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/build.make dep/bullet3/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/BroadPhaseCollision/b3DynamicBvhBroadphase.i
 .PHONY : BroadPhaseCollision/b3DynamicBvhBroadphase.i
 
 # target to generate assembly for a file
 BroadPhaseCollision/b3DynamicBvhBroadphase.s:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/build.make dep/bullet3/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/BroadPhaseCollision/b3DynamicBvhBroadphase.s
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/build.make dep/bullet3/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/BroadPhaseCollision/b3DynamicBvhBroadphase.s
 .PHONY : BroadPhaseCollision/b3DynamicBvhBroadphase.s
 
 # target to build an object file
 BroadPhaseCollision/b3OverlappingPairCache.o:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/build.make dep/bullet3/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/BroadPhaseCollision/b3OverlappingPairCache.o
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/build.make dep/bullet3/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/BroadPhaseCollision/b3OverlappingPairCache.o
 .PHONY : BroadPhaseCollision/b3OverlappingPairCache.o
 
 # target to preprocess a source file
 BroadPhaseCollision/b3OverlappingPairCache.i:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/build.make dep/bullet3/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/BroadPhaseCollision/b3OverlappingPairCache.i
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/build.make dep/bullet3/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/BroadPhaseCollision/b3OverlappingPairCache.i
 .PHONY : BroadPhaseCollision/b3OverlappingPairCache.i
 
 # target to generate assembly for a file
 BroadPhaseCollision/b3OverlappingPairCache.s:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/build.make dep/bullet3/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/BroadPhaseCollision/b3OverlappingPairCache.s
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/build.make dep/bullet3/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/BroadPhaseCollision/b3OverlappingPairCache.s
 .PHONY : BroadPhaseCollision/b3OverlappingPairCache.s
 
 # target to build an object file
 NarrowPhaseCollision/b3ConvexUtility.o:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/build.make dep/bullet3/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/NarrowPhaseCollision/b3ConvexUtility.o
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/build.make dep/bullet3/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/NarrowPhaseCollision/b3ConvexUtility.o
 .PHONY : NarrowPhaseCollision/b3ConvexUtility.o
 
 # target to preprocess a source file
 NarrowPhaseCollision/b3ConvexUtility.i:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/build.make dep/bullet3/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/NarrowPhaseCollision/b3ConvexUtility.i
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/build.make dep/bullet3/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/NarrowPhaseCollision/b3ConvexUtility.i
 .PHONY : NarrowPhaseCollision/b3ConvexUtility.i
 
 # target to generate assembly for a file
 NarrowPhaseCollision/b3ConvexUtility.s:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/build.make dep/bullet3/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/NarrowPhaseCollision/b3ConvexUtility.s
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/build.make dep/bullet3/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/NarrowPhaseCollision/b3ConvexUtility.s
 .PHONY : NarrowPhaseCollision/b3ConvexUtility.s
 
 # target to build an object file
 NarrowPhaseCollision/b3CpuNarrowPhase.o:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/build.make dep/bullet3/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/NarrowPhaseCollision/b3CpuNarrowPhase.o
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/build.make dep/bullet3/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/NarrowPhaseCollision/b3CpuNarrowPhase.o
 .PHONY : NarrowPhaseCollision/b3CpuNarrowPhase.o
 
 # target to preprocess a source file
 NarrowPhaseCollision/b3CpuNarrowPhase.i:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/build.make dep/bullet3/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/NarrowPhaseCollision/b3CpuNarrowPhase.i
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/build.make dep/bullet3/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/NarrowPhaseCollision/b3CpuNarrowPhase.i
 .PHONY : NarrowPhaseCollision/b3CpuNarrowPhase.i
 
 # target to generate assembly for a file
 NarrowPhaseCollision/b3CpuNarrowPhase.s:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/build.make dep/bullet3/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/NarrowPhaseCollision/b3CpuNarrowPhase.s
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/build.make dep/bullet3/src/Bullet3Collision/CMakeFiles/Bullet3Collision.dir/NarrowPhaseCollision/b3CpuNarrowPhase.s
 .PHONY : NarrowPhaseCollision/b3CpuNarrowPhase.s
 
 # Help Target
@@ -302,6 +305,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/tatjam/code/osp/new-ospgl && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -40,6 +40,9 @@ default_target: all
 .SUFFIXES: .hpux_make_needs_suffix_list
 
 
+# Command-line flag to silence nested $(MAKE).
+$(VERBOSE)MAKESILENT = -s
+
 # Suppress display of executed commands.
 $(VERBOSE).SILENT:
 
@@ -65,10 +68,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/tatjam/code/osp/cleanup/test/new-ospgl
+CMAKE_SOURCE_DIR = /home/tatjam/code/osp/new-ospgl
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/tatjam/code/osp/cleanup/test/new-ospgl
+CMAKE_BINARY_DIR = /home/tatjam/code/osp/new-ospgl
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -121,7 +124,7 @@ rebuild_cache/fast: rebuild_cache
 
 # Special rule for the target list_install_components
 list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\" \"assimp-dev\" \"libassimp5.0.0-dev\""
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\" \"assimp-dev\" \"libassimp5.0.1-dev\""
 .PHONY : list_install_components
 
 # Special rule for the target list_install_components
@@ -143,14 +146,14 @@ install/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(CMAKE_COMMAND) -E cmake_progress_start /home/tatjam/code/osp/cleanup/test/new-ospgl/CMakeFiles /home/tatjam/code/osp/cleanup/test/new-ospgl/dep/bullet3/src/BulletSoftBody/CMakeFiles/progress.marks
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f CMakeFiles/Makefile2 dep/bullet3/src/BulletSoftBody/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tatjam/code/osp/cleanup/test/new-ospgl/CMakeFiles 0
+	cd /home/tatjam/code/osp/new-ospgl && $(CMAKE_COMMAND) -E cmake_progress_start /home/tatjam/code/osp/new-ospgl/CMakeFiles /home/tatjam/code/osp/new-ospgl/dep/bullet3/src/BulletSoftBody/CMakeFiles/progress.marks
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dep/bullet3/src/BulletSoftBody/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tatjam/code/osp/new-ospgl/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f CMakeFiles/Makefile2 dep/bullet3/src/BulletSoftBody/clean
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dep/bullet3/src/BulletSoftBody/clean
 .PHONY : clean
 
 # The main clean target
@@ -160,22 +163,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f CMakeFiles/Makefile2 dep/bullet3/src/BulletSoftBody/preinstall
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dep/bullet3/src/BulletSoftBody/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f CMakeFiles/Makefile2 dep/bullet3/src/BulletSoftBody/preinstall
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dep/bullet3/src/BulletSoftBody/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/tatjam/code/osp/new-ospgl && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 dep/bullet3/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/rule:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f CMakeFiles/Makefile2 dep/bullet3/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/rule
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dep/bullet3/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/rule
 .PHONY : dep/bullet3/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/rule
 
 # Convenience name for target.
@@ -185,142 +188,142 @@ BulletSoftBody: dep/bullet3/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/rul
 
 # fast build rule for target.
 BulletSoftBody/fast:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/build.make dep/bullet3/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/build
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/build.make dep/bullet3/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/build
 .PHONY : BulletSoftBody/fast
 
 # target to build an object file
 btDefaultSoftBodySolver.o:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/build.make dep/bullet3/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btDefaultSoftBodySolver.o
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/build.make dep/bullet3/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btDefaultSoftBodySolver.o
 .PHONY : btDefaultSoftBodySolver.o
 
 # target to preprocess a source file
 btDefaultSoftBodySolver.i:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/build.make dep/bullet3/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btDefaultSoftBodySolver.i
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/build.make dep/bullet3/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btDefaultSoftBodySolver.i
 .PHONY : btDefaultSoftBodySolver.i
 
 # target to generate assembly for a file
 btDefaultSoftBodySolver.s:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/build.make dep/bullet3/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btDefaultSoftBodySolver.s
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/build.make dep/bullet3/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btDefaultSoftBodySolver.s
 .PHONY : btDefaultSoftBodySolver.s
 
 # target to build an object file
 btSoftBody.o:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/build.make dep/bullet3/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftBody.o
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/build.make dep/bullet3/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftBody.o
 .PHONY : btSoftBody.o
 
 # target to preprocess a source file
 btSoftBody.i:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/build.make dep/bullet3/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftBody.i
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/build.make dep/bullet3/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftBody.i
 .PHONY : btSoftBody.i
 
 # target to generate assembly for a file
 btSoftBody.s:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/build.make dep/bullet3/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftBody.s
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/build.make dep/bullet3/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftBody.s
 .PHONY : btSoftBody.s
 
 # target to build an object file
 btSoftBodyConcaveCollisionAlgorithm.o:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/build.make dep/bullet3/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftBodyConcaveCollisionAlgorithm.o
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/build.make dep/bullet3/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftBodyConcaveCollisionAlgorithm.o
 .PHONY : btSoftBodyConcaveCollisionAlgorithm.o
 
 # target to preprocess a source file
 btSoftBodyConcaveCollisionAlgorithm.i:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/build.make dep/bullet3/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftBodyConcaveCollisionAlgorithm.i
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/build.make dep/bullet3/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftBodyConcaveCollisionAlgorithm.i
 .PHONY : btSoftBodyConcaveCollisionAlgorithm.i
 
 # target to generate assembly for a file
 btSoftBodyConcaveCollisionAlgorithm.s:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/build.make dep/bullet3/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftBodyConcaveCollisionAlgorithm.s
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/build.make dep/bullet3/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftBodyConcaveCollisionAlgorithm.s
 .PHONY : btSoftBodyConcaveCollisionAlgorithm.s
 
 # target to build an object file
 btSoftBodyHelpers.o:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/build.make dep/bullet3/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftBodyHelpers.o
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/build.make dep/bullet3/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftBodyHelpers.o
 .PHONY : btSoftBodyHelpers.o
 
 # target to preprocess a source file
 btSoftBodyHelpers.i:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/build.make dep/bullet3/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftBodyHelpers.i
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/build.make dep/bullet3/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftBodyHelpers.i
 .PHONY : btSoftBodyHelpers.i
 
 # target to generate assembly for a file
 btSoftBodyHelpers.s:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/build.make dep/bullet3/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftBodyHelpers.s
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/build.make dep/bullet3/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftBodyHelpers.s
 .PHONY : btSoftBodyHelpers.s
 
 # target to build an object file
 btSoftBodyRigidBodyCollisionConfiguration.o:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/build.make dep/bullet3/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftBodyRigidBodyCollisionConfiguration.o
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/build.make dep/bullet3/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftBodyRigidBodyCollisionConfiguration.o
 .PHONY : btSoftBodyRigidBodyCollisionConfiguration.o
 
 # target to preprocess a source file
 btSoftBodyRigidBodyCollisionConfiguration.i:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/build.make dep/bullet3/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftBodyRigidBodyCollisionConfiguration.i
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/build.make dep/bullet3/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftBodyRigidBodyCollisionConfiguration.i
 .PHONY : btSoftBodyRigidBodyCollisionConfiguration.i
 
 # target to generate assembly for a file
 btSoftBodyRigidBodyCollisionConfiguration.s:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/build.make dep/bullet3/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftBodyRigidBodyCollisionConfiguration.s
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/build.make dep/bullet3/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftBodyRigidBodyCollisionConfiguration.s
 .PHONY : btSoftBodyRigidBodyCollisionConfiguration.s
 
 # target to build an object file
 btSoftMultiBodyDynamicsWorld.o:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/build.make dep/bullet3/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftMultiBodyDynamicsWorld.o
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/build.make dep/bullet3/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftMultiBodyDynamicsWorld.o
 .PHONY : btSoftMultiBodyDynamicsWorld.o
 
 # target to preprocess a source file
 btSoftMultiBodyDynamicsWorld.i:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/build.make dep/bullet3/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftMultiBodyDynamicsWorld.i
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/build.make dep/bullet3/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftMultiBodyDynamicsWorld.i
 .PHONY : btSoftMultiBodyDynamicsWorld.i
 
 # target to generate assembly for a file
 btSoftMultiBodyDynamicsWorld.s:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/build.make dep/bullet3/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftMultiBodyDynamicsWorld.s
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/build.make dep/bullet3/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftMultiBodyDynamicsWorld.s
 .PHONY : btSoftMultiBodyDynamicsWorld.s
 
 # target to build an object file
 btSoftRigidCollisionAlgorithm.o:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/build.make dep/bullet3/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftRigidCollisionAlgorithm.o
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/build.make dep/bullet3/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftRigidCollisionAlgorithm.o
 .PHONY : btSoftRigidCollisionAlgorithm.o
 
 # target to preprocess a source file
 btSoftRigidCollisionAlgorithm.i:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/build.make dep/bullet3/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftRigidCollisionAlgorithm.i
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/build.make dep/bullet3/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftRigidCollisionAlgorithm.i
 .PHONY : btSoftRigidCollisionAlgorithm.i
 
 # target to generate assembly for a file
 btSoftRigidCollisionAlgorithm.s:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/build.make dep/bullet3/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftRigidCollisionAlgorithm.s
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/build.make dep/bullet3/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftRigidCollisionAlgorithm.s
 .PHONY : btSoftRigidCollisionAlgorithm.s
 
 # target to build an object file
 btSoftRigidDynamicsWorld.o:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/build.make dep/bullet3/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftRigidDynamicsWorld.o
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/build.make dep/bullet3/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftRigidDynamicsWorld.o
 .PHONY : btSoftRigidDynamicsWorld.o
 
 # target to preprocess a source file
 btSoftRigidDynamicsWorld.i:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/build.make dep/bullet3/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftRigidDynamicsWorld.i
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/build.make dep/bullet3/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftRigidDynamicsWorld.i
 .PHONY : btSoftRigidDynamicsWorld.i
 
 # target to generate assembly for a file
 btSoftRigidDynamicsWorld.s:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/build.make dep/bullet3/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftRigidDynamicsWorld.s
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/build.make dep/bullet3/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftRigidDynamicsWorld.s
 .PHONY : btSoftRigidDynamicsWorld.s
 
 # target to build an object file
 btSoftSoftCollisionAlgorithm.o:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/build.make dep/bullet3/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftSoftCollisionAlgorithm.o
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/build.make dep/bullet3/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftSoftCollisionAlgorithm.o
 .PHONY : btSoftSoftCollisionAlgorithm.o
 
 # target to preprocess a source file
 btSoftSoftCollisionAlgorithm.i:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/build.make dep/bullet3/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftSoftCollisionAlgorithm.i
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/build.make dep/bullet3/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftSoftCollisionAlgorithm.i
 .PHONY : btSoftSoftCollisionAlgorithm.i
 
 # target to generate assembly for a file
 btSoftSoftCollisionAlgorithm.s:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/build.make dep/bullet3/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftSoftCollisionAlgorithm.s
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/build.make dep/bullet3/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/btSoftSoftCollisionAlgorithm.s
 .PHONY : btSoftSoftCollisionAlgorithm.s
 
 # Help Target
@@ -374,6 +377,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/tatjam/code/osp/new-ospgl && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

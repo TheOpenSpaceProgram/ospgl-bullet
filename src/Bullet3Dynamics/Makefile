@@ -40,6 +40,9 @@ default_target: all
 .SUFFIXES: .hpux_make_needs_suffix_list
 
 
+# Command-line flag to silence nested $(MAKE).
+$(VERBOSE)MAKESILENT = -s
+
 # Suppress display of executed commands.
 $(VERBOSE).SILENT:
 
@@ -65,10 +68,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/tatjam/code/osp/cleanup/test/new-ospgl
+CMAKE_SOURCE_DIR = /home/tatjam/code/osp/new-ospgl
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/tatjam/code/osp/cleanup/test/new-ospgl
+CMAKE_BINARY_DIR = /home/tatjam/code/osp/new-ospgl
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -121,7 +124,7 @@ rebuild_cache/fast: rebuild_cache
 
 # Special rule for the target list_install_components
 list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\" \"assimp-dev\" \"libassimp5.0.0-dev\""
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\" \"assimp-dev\" \"libassimp5.0.1-dev\""
 .PHONY : list_install_components
 
 # Special rule for the target list_install_components
@@ -143,14 +146,14 @@ install/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(CMAKE_COMMAND) -E cmake_progress_start /home/tatjam/code/osp/cleanup/test/new-ospgl/CMakeFiles /home/tatjam/code/osp/cleanup/test/new-ospgl/dep/bullet3/src/Bullet3Dynamics/CMakeFiles/progress.marks
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f CMakeFiles/Makefile2 dep/bullet3/src/Bullet3Dynamics/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tatjam/code/osp/cleanup/test/new-ospgl/CMakeFiles 0
+	cd /home/tatjam/code/osp/new-ospgl && $(CMAKE_COMMAND) -E cmake_progress_start /home/tatjam/code/osp/new-ospgl/CMakeFiles /home/tatjam/code/osp/new-ospgl/dep/bullet3/src/Bullet3Dynamics/CMakeFiles/progress.marks
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dep/bullet3/src/Bullet3Dynamics/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tatjam/code/osp/new-ospgl/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f CMakeFiles/Makefile2 dep/bullet3/src/Bullet3Dynamics/clean
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dep/bullet3/src/Bullet3Dynamics/clean
 .PHONY : clean
 
 # The main clean target
@@ -160,22 +163,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f CMakeFiles/Makefile2 dep/bullet3/src/Bullet3Dynamics/preinstall
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dep/bullet3/src/Bullet3Dynamics/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f CMakeFiles/Makefile2 dep/bullet3/src/Bullet3Dynamics/preinstall
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dep/bullet3/src/Bullet3Dynamics/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/tatjam/code/osp/new-ospgl && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 dep/bullet3/src/Bullet3Dynamics/CMakeFiles/Bullet3Dynamics.dir/rule:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f CMakeFiles/Makefile2 dep/bullet3/src/Bullet3Dynamics/CMakeFiles/Bullet3Dynamics.dir/rule
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dep/bullet3/src/Bullet3Dynamics/CMakeFiles/Bullet3Dynamics.dir/rule
 .PHONY : dep/bullet3/src/Bullet3Dynamics/CMakeFiles/Bullet3Dynamics.dir/rule
 
 # Convenience name for target.
@@ -185,97 +188,97 @@ Bullet3Dynamics: dep/bullet3/src/Bullet3Dynamics/CMakeFiles/Bullet3Dynamics.dir/
 
 # fast build rule for target.
 Bullet3Dynamics/fast:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/Bullet3Dynamics/CMakeFiles/Bullet3Dynamics.dir/build.make dep/bullet3/src/Bullet3Dynamics/CMakeFiles/Bullet3Dynamics.dir/build
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/Bullet3Dynamics/CMakeFiles/Bullet3Dynamics.dir/build.make dep/bullet3/src/Bullet3Dynamics/CMakeFiles/Bullet3Dynamics.dir/build
 .PHONY : Bullet3Dynamics/fast
 
 # target to build an object file
 ConstraintSolver/b3FixedConstraint.o:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/Bullet3Dynamics/CMakeFiles/Bullet3Dynamics.dir/build.make dep/bullet3/src/Bullet3Dynamics/CMakeFiles/Bullet3Dynamics.dir/ConstraintSolver/b3FixedConstraint.o
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/Bullet3Dynamics/CMakeFiles/Bullet3Dynamics.dir/build.make dep/bullet3/src/Bullet3Dynamics/CMakeFiles/Bullet3Dynamics.dir/ConstraintSolver/b3FixedConstraint.o
 .PHONY : ConstraintSolver/b3FixedConstraint.o
 
 # target to preprocess a source file
 ConstraintSolver/b3FixedConstraint.i:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/Bullet3Dynamics/CMakeFiles/Bullet3Dynamics.dir/build.make dep/bullet3/src/Bullet3Dynamics/CMakeFiles/Bullet3Dynamics.dir/ConstraintSolver/b3FixedConstraint.i
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/Bullet3Dynamics/CMakeFiles/Bullet3Dynamics.dir/build.make dep/bullet3/src/Bullet3Dynamics/CMakeFiles/Bullet3Dynamics.dir/ConstraintSolver/b3FixedConstraint.i
 .PHONY : ConstraintSolver/b3FixedConstraint.i
 
 # target to generate assembly for a file
 ConstraintSolver/b3FixedConstraint.s:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/Bullet3Dynamics/CMakeFiles/Bullet3Dynamics.dir/build.make dep/bullet3/src/Bullet3Dynamics/CMakeFiles/Bullet3Dynamics.dir/ConstraintSolver/b3FixedConstraint.s
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/Bullet3Dynamics/CMakeFiles/Bullet3Dynamics.dir/build.make dep/bullet3/src/Bullet3Dynamics/CMakeFiles/Bullet3Dynamics.dir/ConstraintSolver/b3FixedConstraint.s
 .PHONY : ConstraintSolver/b3FixedConstraint.s
 
 # target to build an object file
 ConstraintSolver/b3Generic6DofConstraint.o:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/Bullet3Dynamics/CMakeFiles/Bullet3Dynamics.dir/build.make dep/bullet3/src/Bullet3Dynamics/CMakeFiles/Bullet3Dynamics.dir/ConstraintSolver/b3Generic6DofConstraint.o
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/Bullet3Dynamics/CMakeFiles/Bullet3Dynamics.dir/build.make dep/bullet3/src/Bullet3Dynamics/CMakeFiles/Bullet3Dynamics.dir/ConstraintSolver/b3Generic6DofConstraint.o
 .PHONY : ConstraintSolver/b3Generic6DofConstraint.o
 
 # target to preprocess a source file
 ConstraintSolver/b3Generic6DofConstraint.i:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/Bullet3Dynamics/CMakeFiles/Bullet3Dynamics.dir/build.make dep/bullet3/src/Bullet3Dynamics/CMakeFiles/Bullet3Dynamics.dir/ConstraintSolver/b3Generic6DofConstraint.i
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/Bullet3Dynamics/CMakeFiles/Bullet3Dynamics.dir/build.make dep/bullet3/src/Bullet3Dynamics/CMakeFiles/Bullet3Dynamics.dir/ConstraintSolver/b3Generic6DofConstraint.i
 .PHONY : ConstraintSolver/b3Generic6DofConstraint.i
 
 # target to generate assembly for a file
 ConstraintSolver/b3Generic6DofConstraint.s:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/Bullet3Dynamics/CMakeFiles/Bullet3Dynamics.dir/build.make dep/bullet3/src/Bullet3Dynamics/CMakeFiles/Bullet3Dynamics.dir/ConstraintSolver/b3Generic6DofConstraint.s
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/Bullet3Dynamics/CMakeFiles/Bullet3Dynamics.dir/build.make dep/bullet3/src/Bullet3Dynamics/CMakeFiles/Bullet3Dynamics.dir/ConstraintSolver/b3Generic6DofConstraint.s
 .PHONY : ConstraintSolver/b3Generic6DofConstraint.s
 
 # target to build an object file
 ConstraintSolver/b3PgsJacobiSolver.o:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/Bullet3Dynamics/CMakeFiles/Bullet3Dynamics.dir/build.make dep/bullet3/src/Bullet3Dynamics/CMakeFiles/Bullet3Dynamics.dir/ConstraintSolver/b3PgsJacobiSolver.o
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/Bullet3Dynamics/CMakeFiles/Bullet3Dynamics.dir/build.make dep/bullet3/src/Bullet3Dynamics/CMakeFiles/Bullet3Dynamics.dir/ConstraintSolver/b3PgsJacobiSolver.o
 .PHONY : ConstraintSolver/b3PgsJacobiSolver.o
 
 # target to preprocess a source file
 ConstraintSolver/b3PgsJacobiSolver.i:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/Bullet3Dynamics/CMakeFiles/Bullet3Dynamics.dir/build.make dep/bullet3/src/Bullet3Dynamics/CMakeFiles/Bullet3Dynamics.dir/ConstraintSolver/b3PgsJacobiSolver.i
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/Bullet3Dynamics/CMakeFiles/Bullet3Dynamics.dir/build.make dep/bullet3/src/Bullet3Dynamics/CMakeFiles/Bullet3Dynamics.dir/ConstraintSolver/b3PgsJacobiSolver.i
 .PHONY : ConstraintSolver/b3PgsJacobiSolver.i
 
 # target to generate assembly for a file
 ConstraintSolver/b3PgsJacobiSolver.s:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/Bullet3Dynamics/CMakeFiles/Bullet3Dynamics.dir/build.make dep/bullet3/src/Bullet3Dynamics/CMakeFiles/Bullet3Dynamics.dir/ConstraintSolver/b3PgsJacobiSolver.s
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/Bullet3Dynamics/CMakeFiles/Bullet3Dynamics.dir/build.make dep/bullet3/src/Bullet3Dynamics/CMakeFiles/Bullet3Dynamics.dir/ConstraintSolver/b3PgsJacobiSolver.s
 .PHONY : ConstraintSolver/b3PgsJacobiSolver.s
 
 # target to build an object file
 ConstraintSolver/b3Point2PointConstraint.o:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/Bullet3Dynamics/CMakeFiles/Bullet3Dynamics.dir/build.make dep/bullet3/src/Bullet3Dynamics/CMakeFiles/Bullet3Dynamics.dir/ConstraintSolver/b3Point2PointConstraint.o
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/Bullet3Dynamics/CMakeFiles/Bullet3Dynamics.dir/build.make dep/bullet3/src/Bullet3Dynamics/CMakeFiles/Bullet3Dynamics.dir/ConstraintSolver/b3Point2PointConstraint.o
 .PHONY : ConstraintSolver/b3Point2PointConstraint.o
 
 # target to preprocess a source file
 ConstraintSolver/b3Point2PointConstraint.i:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/Bullet3Dynamics/CMakeFiles/Bullet3Dynamics.dir/build.make dep/bullet3/src/Bullet3Dynamics/CMakeFiles/Bullet3Dynamics.dir/ConstraintSolver/b3Point2PointConstraint.i
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/Bullet3Dynamics/CMakeFiles/Bullet3Dynamics.dir/build.make dep/bullet3/src/Bullet3Dynamics/CMakeFiles/Bullet3Dynamics.dir/ConstraintSolver/b3Point2PointConstraint.i
 .PHONY : ConstraintSolver/b3Point2PointConstraint.i
 
 # target to generate assembly for a file
 ConstraintSolver/b3Point2PointConstraint.s:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/Bullet3Dynamics/CMakeFiles/Bullet3Dynamics.dir/build.make dep/bullet3/src/Bullet3Dynamics/CMakeFiles/Bullet3Dynamics.dir/ConstraintSolver/b3Point2PointConstraint.s
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/Bullet3Dynamics/CMakeFiles/Bullet3Dynamics.dir/build.make dep/bullet3/src/Bullet3Dynamics/CMakeFiles/Bullet3Dynamics.dir/ConstraintSolver/b3Point2PointConstraint.s
 .PHONY : ConstraintSolver/b3Point2PointConstraint.s
 
 # target to build an object file
 ConstraintSolver/b3TypedConstraint.o:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/Bullet3Dynamics/CMakeFiles/Bullet3Dynamics.dir/build.make dep/bullet3/src/Bullet3Dynamics/CMakeFiles/Bullet3Dynamics.dir/ConstraintSolver/b3TypedConstraint.o
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/Bullet3Dynamics/CMakeFiles/Bullet3Dynamics.dir/build.make dep/bullet3/src/Bullet3Dynamics/CMakeFiles/Bullet3Dynamics.dir/ConstraintSolver/b3TypedConstraint.o
 .PHONY : ConstraintSolver/b3TypedConstraint.o
 
 # target to preprocess a source file
 ConstraintSolver/b3TypedConstraint.i:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/Bullet3Dynamics/CMakeFiles/Bullet3Dynamics.dir/build.make dep/bullet3/src/Bullet3Dynamics/CMakeFiles/Bullet3Dynamics.dir/ConstraintSolver/b3TypedConstraint.i
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/Bullet3Dynamics/CMakeFiles/Bullet3Dynamics.dir/build.make dep/bullet3/src/Bullet3Dynamics/CMakeFiles/Bullet3Dynamics.dir/ConstraintSolver/b3TypedConstraint.i
 .PHONY : ConstraintSolver/b3TypedConstraint.i
 
 # target to generate assembly for a file
 ConstraintSolver/b3TypedConstraint.s:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/Bullet3Dynamics/CMakeFiles/Bullet3Dynamics.dir/build.make dep/bullet3/src/Bullet3Dynamics/CMakeFiles/Bullet3Dynamics.dir/ConstraintSolver/b3TypedConstraint.s
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/Bullet3Dynamics/CMakeFiles/Bullet3Dynamics.dir/build.make dep/bullet3/src/Bullet3Dynamics/CMakeFiles/Bullet3Dynamics.dir/ConstraintSolver/b3TypedConstraint.s
 .PHONY : ConstraintSolver/b3TypedConstraint.s
 
 # target to build an object file
 b3CpuRigidBodyPipeline.o:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/Bullet3Dynamics/CMakeFiles/Bullet3Dynamics.dir/build.make dep/bullet3/src/Bullet3Dynamics/CMakeFiles/Bullet3Dynamics.dir/b3CpuRigidBodyPipeline.o
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/Bullet3Dynamics/CMakeFiles/Bullet3Dynamics.dir/build.make dep/bullet3/src/Bullet3Dynamics/CMakeFiles/Bullet3Dynamics.dir/b3CpuRigidBodyPipeline.o
 .PHONY : b3CpuRigidBodyPipeline.o
 
 # target to preprocess a source file
 b3CpuRigidBodyPipeline.i:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/Bullet3Dynamics/CMakeFiles/Bullet3Dynamics.dir/build.make dep/bullet3/src/Bullet3Dynamics/CMakeFiles/Bullet3Dynamics.dir/b3CpuRigidBodyPipeline.i
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/Bullet3Dynamics/CMakeFiles/Bullet3Dynamics.dir/build.make dep/bullet3/src/Bullet3Dynamics/CMakeFiles/Bullet3Dynamics.dir/b3CpuRigidBodyPipeline.i
 .PHONY : b3CpuRigidBodyPipeline.i
 
 # target to generate assembly for a file
 b3CpuRigidBodyPipeline.s:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/Bullet3Dynamics/CMakeFiles/Bullet3Dynamics.dir/build.make dep/bullet3/src/Bullet3Dynamics/CMakeFiles/Bullet3Dynamics.dir/b3CpuRigidBodyPipeline.s
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/Bullet3Dynamics/CMakeFiles/Bullet3Dynamics.dir/build.make dep/bullet3/src/Bullet3Dynamics/CMakeFiles/Bullet3Dynamics.dir/b3CpuRigidBodyPipeline.s
 .PHONY : b3CpuRigidBodyPipeline.s
 
 # Help Target
@@ -320,6 +323,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/tatjam/code/osp/new-ospgl && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

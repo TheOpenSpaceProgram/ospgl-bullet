@@ -40,6 +40,9 @@ default_target: all
 .SUFFIXES: .hpux_make_needs_suffix_list
 
 
+# Command-line flag to silence nested $(MAKE).
+$(VERBOSE)MAKESILENT = -s
+
 # Suppress display of executed commands.
 $(VERBOSE).SILENT:
 
@@ -65,10 +68,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/tatjam/code/osp/cleanup/test/new-ospgl
+CMAKE_SOURCE_DIR = /home/tatjam/code/osp/new-ospgl
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/tatjam/code/osp/cleanup/test/new-ospgl
+CMAKE_BINARY_DIR = /home/tatjam/code/osp/new-ospgl
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -133,7 +136,7 @@ install/fast: preinstall/fast
 
 # Special rule for the target list_install_components
 list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\" \"assimp-dev\" \"libassimp5.0.0-dev\""
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\" \"assimp-dev\" \"libassimp5.0.1-dev\""
 .PHONY : list_install_components
 
 # Special rule for the target list_install_components
@@ -143,14 +146,14 @@ list_install_components/fast: list_install_components
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(CMAKE_COMMAND) -E cmake_progress_start /home/tatjam/code/osp/cleanup/test/new-ospgl/CMakeFiles /home/tatjam/code/osp/cleanup/test/new-ospgl/dep/bullet3/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/progress.marks
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f CMakeFiles/Makefile2 dep/bullet3/src/Bullet3Serialize/Bullet2FileLoader/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tatjam/code/osp/cleanup/test/new-ospgl/CMakeFiles 0
+	cd /home/tatjam/code/osp/new-ospgl && $(CMAKE_COMMAND) -E cmake_progress_start /home/tatjam/code/osp/new-ospgl/CMakeFiles /home/tatjam/code/osp/new-ospgl/dep/bullet3/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/progress.marks
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dep/bullet3/src/Bullet3Serialize/Bullet2FileLoader/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tatjam/code/osp/new-ospgl/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f CMakeFiles/Makefile2 dep/bullet3/src/Bullet3Serialize/Bullet2FileLoader/clean
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dep/bullet3/src/Bullet3Serialize/Bullet2FileLoader/clean
 .PHONY : clean
 
 # The main clean target
@@ -160,22 +163,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f CMakeFiles/Makefile2 dep/bullet3/src/Bullet3Serialize/Bullet2FileLoader/preinstall
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dep/bullet3/src/Bullet3Serialize/Bullet2FileLoader/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f CMakeFiles/Makefile2 dep/bullet3/src/Bullet3Serialize/Bullet2FileLoader/preinstall
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dep/bullet3/src/Bullet3Serialize/Bullet2FileLoader/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/tatjam/code/osp/new-ospgl && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 dep/bullet3/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/rule:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f CMakeFiles/Makefile2 dep/bullet3/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/rule
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dep/bullet3/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/rule
 .PHONY : dep/bullet3/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/rule
 
 # Convenience name for target.
@@ -185,82 +188,82 @@ Bullet2FileLoader: dep/bullet3/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles
 
 # fast build rule for target.
 Bullet2FileLoader/fast:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/build.make dep/bullet3/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/build
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/build.make dep/bullet3/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/build
 .PHONY : Bullet2FileLoader/fast
 
 # target to build an object file
 b3BulletFile.o:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/build.make dep/bullet3/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/b3BulletFile.o
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/build.make dep/bullet3/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/b3BulletFile.o
 .PHONY : b3BulletFile.o
 
 # target to preprocess a source file
 b3BulletFile.i:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/build.make dep/bullet3/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/b3BulletFile.i
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/build.make dep/bullet3/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/b3BulletFile.i
 .PHONY : b3BulletFile.i
 
 # target to generate assembly for a file
 b3BulletFile.s:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/build.make dep/bullet3/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/b3BulletFile.s
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/build.make dep/bullet3/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/b3BulletFile.s
 .PHONY : b3BulletFile.s
 
 # target to build an object file
 b3Chunk.o:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/build.make dep/bullet3/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/b3Chunk.o
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/build.make dep/bullet3/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/b3Chunk.o
 .PHONY : b3Chunk.o
 
 # target to preprocess a source file
 b3Chunk.i:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/build.make dep/bullet3/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/b3Chunk.i
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/build.make dep/bullet3/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/b3Chunk.i
 .PHONY : b3Chunk.i
 
 # target to generate assembly for a file
 b3Chunk.s:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/build.make dep/bullet3/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/b3Chunk.s
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/build.make dep/bullet3/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/b3Chunk.s
 .PHONY : b3Chunk.s
 
 # target to build an object file
 b3DNA.o:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/build.make dep/bullet3/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/b3DNA.o
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/build.make dep/bullet3/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/b3DNA.o
 .PHONY : b3DNA.o
 
 # target to preprocess a source file
 b3DNA.i:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/build.make dep/bullet3/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/b3DNA.i
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/build.make dep/bullet3/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/b3DNA.i
 .PHONY : b3DNA.i
 
 # target to generate assembly for a file
 b3DNA.s:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/build.make dep/bullet3/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/b3DNA.s
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/build.make dep/bullet3/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/b3DNA.s
 .PHONY : b3DNA.s
 
 # target to build an object file
 b3File.o:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/build.make dep/bullet3/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/b3File.o
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/build.make dep/bullet3/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/b3File.o
 .PHONY : b3File.o
 
 # target to preprocess a source file
 b3File.i:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/build.make dep/bullet3/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/b3File.i
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/build.make dep/bullet3/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/b3File.i
 .PHONY : b3File.i
 
 # target to generate assembly for a file
 b3File.s:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/build.make dep/bullet3/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/b3File.s
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/build.make dep/bullet3/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/b3File.s
 .PHONY : b3File.s
 
 # target to build an object file
 b3Serializer.o:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/build.make dep/bullet3/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/b3Serializer.o
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/build.make dep/bullet3/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/b3Serializer.o
 .PHONY : b3Serializer.o
 
 # target to preprocess a source file
 b3Serializer.i:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/build.make dep/bullet3/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/b3Serializer.i
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/build.make dep/bullet3/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/b3Serializer.i
 .PHONY : b3Serializer.i
 
 # target to generate assembly for a file
 b3Serializer.s:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/build.make dep/bullet3/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/b3Serializer.s
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/build.make dep/bullet3/src/Bullet3Serialize/Bullet2FileLoader/CMakeFiles/Bullet2FileLoader.dir/b3Serializer.s
 .PHONY : b3Serializer.s
 
 # Help Target
@@ -302,6 +305,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/tatjam/code/osp/new-ospgl && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

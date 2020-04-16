@@ -40,6 +40,9 @@ default_target: all
 .SUFFIXES: .hpux_make_needs_suffix_list
 
 
+# Command-line flag to silence nested $(MAKE).
+$(VERBOSE)MAKESILENT = -s
+
 # Suppress display of executed commands.
 $(VERBOSE).SILENT:
 
@@ -65,10 +68,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/tatjam/code/osp/cleanup/test/new-ospgl
+CMAKE_SOURCE_DIR = /home/tatjam/code/osp/new-ospgl
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/tatjam/code/osp/cleanup/test/new-ospgl
+CMAKE_BINARY_DIR = /home/tatjam/code/osp/new-ospgl
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -121,7 +124,7 @@ rebuild_cache/fast: rebuild_cache
 
 # Special rule for the target list_install_components
 list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\" \"assimp-dev\" \"libassimp5.0.0-dev\""
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\" \"assimp-dev\" \"libassimp5.0.1-dev\""
 .PHONY : list_install_components
 
 # Special rule for the target list_install_components
@@ -143,14 +146,14 @@ install/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(CMAKE_COMMAND) -E cmake_progress_start /home/tatjam/code/osp/cleanup/test/new-ospgl/CMakeFiles /home/tatjam/code/osp/cleanup/test/new-ospgl/dep/bullet3/src/Bullet3Common/CMakeFiles/progress.marks
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f CMakeFiles/Makefile2 dep/bullet3/src/Bullet3Common/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tatjam/code/osp/cleanup/test/new-ospgl/CMakeFiles 0
+	cd /home/tatjam/code/osp/new-ospgl && $(CMAKE_COMMAND) -E cmake_progress_start /home/tatjam/code/osp/new-ospgl/CMakeFiles /home/tatjam/code/osp/new-ospgl/dep/bullet3/src/Bullet3Common/CMakeFiles/progress.marks
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dep/bullet3/src/Bullet3Common/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tatjam/code/osp/new-ospgl/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f CMakeFiles/Makefile2 dep/bullet3/src/Bullet3Common/clean
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dep/bullet3/src/Bullet3Common/clean
 .PHONY : clean
 
 # The main clean target
@@ -160,22 +163,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f CMakeFiles/Makefile2 dep/bullet3/src/Bullet3Common/preinstall
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dep/bullet3/src/Bullet3Common/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f CMakeFiles/Makefile2 dep/bullet3/src/Bullet3Common/preinstall
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dep/bullet3/src/Bullet3Common/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/tatjam/code/osp/new-ospgl && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 dep/bullet3/src/Bullet3Common/CMakeFiles/Bullet3Common.dir/rule:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f CMakeFiles/Makefile2 dep/bullet3/src/Bullet3Common/CMakeFiles/Bullet3Common.dir/rule
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dep/bullet3/src/Bullet3Common/CMakeFiles/Bullet3Common.dir/rule
 .PHONY : dep/bullet3/src/Bullet3Common/CMakeFiles/Bullet3Common.dir/rule
 
 # Convenience name for target.
@@ -185,52 +188,52 @@ Bullet3Common: dep/bullet3/src/Bullet3Common/CMakeFiles/Bullet3Common.dir/rule
 
 # fast build rule for target.
 Bullet3Common/fast:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/Bullet3Common/CMakeFiles/Bullet3Common.dir/build.make dep/bullet3/src/Bullet3Common/CMakeFiles/Bullet3Common.dir/build
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/Bullet3Common/CMakeFiles/Bullet3Common.dir/build.make dep/bullet3/src/Bullet3Common/CMakeFiles/Bullet3Common.dir/build
 .PHONY : Bullet3Common/fast
 
 # target to build an object file
 b3AlignedAllocator.o:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/Bullet3Common/CMakeFiles/Bullet3Common.dir/build.make dep/bullet3/src/Bullet3Common/CMakeFiles/Bullet3Common.dir/b3AlignedAllocator.o
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/Bullet3Common/CMakeFiles/Bullet3Common.dir/build.make dep/bullet3/src/Bullet3Common/CMakeFiles/Bullet3Common.dir/b3AlignedAllocator.o
 .PHONY : b3AlignedAllocator.o
 
 # target to preprocess a source file
 b3AlignedAllocator.i:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/Bullet3Common/CMakeFiles/Bullet3Common.dir/build.make dep/bullet3/src/Bullet3Common/CMakeFiles/Bullet3Common.dir/b3AlignedAllocator.i
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/Bullet3Common/CMakeFiles/Bullet3Common.dir/build.make dep/bullet3/src/Bullet3Common/CMakeFiles/Bullet3Common.dir/b3AlignedAllocator.i
 .PHONY : b3AlignedAllocator.i
 
 # target to generate assembly for a file
 b3AlignedAllocator.s:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/Bullet3Common/CMakeFiles/Bullet3Common.dir/build.make dep/bullet3/src/Bullet3Common/CMakeFiles/Bullet3Common.dir/b3AlignedAllocator.s
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/Bullet3Common/CMakeFiles/Bullet3Common.dir/build.make dep/bullet3/src/Bullet3Common/CMakeFiles/Bullet3Common.dir/b3AlignedAllocator.s
 .PHONY : b3AlignedAllocator.s
 
 # target to build an object file
 b3Logging.o:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/Bullet3Common/CMakeFiles/Bullet3Common.dir/build.make dep/bullet3/src/Bullet3Common/CMakeFiles/Bullet3Common.dir/b3Logging.o
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/Bullet3Common/CMakeFiles/Bullet3Common.dir/build.make dep/bullet3/src/Bullet3Common/CMakeFiles/Bullet3Common.dir/b3Logging.o
 .PHONY : b3Logging.o
 
 # target to preprocess a source file
 b3Logging.i:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/Bullet3Common/CMakeFiles/Bullet3Common.dir/build.make dep/bullet3/src/Bullet3Common/CMakeFiles/Bullet3Common.dir/b3Logging.i
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/Bullet3Common/CMakeFiles/Bullet3Common.dir/build.make dep/bullet3/src/Bullet3Common/CMakeFiles/Bullet3Common.dir/b3Logging.i
 .PHONY : b3Logging.i
 
 # target to generate assembly for a file
 b3Logging.s:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/Bullet3Common/CMakeFiles/Bullet3Common.dir/build.make dep/bullet3/src/Bullet3Common/CMakeFiles/Bullet3Common.dir/b3Logging.s
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/Bullet3Common/CMakeFiles/Bullet3Common.dir/build.make dep/bullet3/src/Bullet3Common/CMakeFiles/Bullet3Common.dir/b3Logging.s
 .PHONY : b3Logging.s
 
 # target to build an object file
 b3Vector3.o:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/Bullet3Common/CMakeFiles/Bullet3Common.dir/build.make dep/bullet3/src/Bullet3Common/CMakeFiles/Bullet3Common.dir/b3Vector3.o
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/Bullet3Common/CMakeFiles/Bullet3Common.dir/build.make dep/bullet3/src/Bullet3Common/CMakeFiles/Bullet3Common.dir/b3Vector3.o
 .PHONY : b3Vector3.o
 
 # target to preprocess a source file
 b3Vector3.i:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/Bullet3Common/CMakeFiles/Bullet3Common.dir/build.make dep/bullet3/src/Bullet3Common/CMakeFiles/Bullet3Common.dir/b3Vector3.i
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/Bullet3Common/CMakeFiles/Bullet3Common.dir/build.make dep/bullet3/src/Bullet3Common/CMakeFiles/Bullet3Common.dir/b3Vector3.i
 .PHONY : b3Vector3.i
 
 # target to generate assembly for a file
 b3Vector3.s:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/Bullet3Common/CMakeFiles/Bullet3Common.dir/build.make dep/bullet3/src/Bullet3Common/CMakeFiles/Bullet3Common.dir/b3Vector3.s
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/Bullet3Common/CMakeFiles/Bullet3Common.dir/build.make dep/bullet3/src/Bullet3Common/CMakeFiles/Bullet3Common.dir/b3Vector3.s
 .PHONY : b3Vector3.s
 
 # Help Target
@@ -266,6 +269,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/tatjam/code/osp/new-ospgl && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

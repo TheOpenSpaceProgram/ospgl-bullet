@@ -40,6 +40,9 @@ default_target: all
 .SUFFIXES: .hpux_make_needs_suffix_list
 
 
+# Command-line flag to silence nested $(MAKE).
+$(VERBOSE)MAKESILENT = -s
+
 # Suppress display of executed commands.
 $(VERBOSE).SILENT:
 
@@ -65,10 +68,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/tatjam/code/osp/cleanup/test/new-ospgl
+CMAKE_SOURCE_DIR = /home/tatjam/code/osp/new-ospgl
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/tatjam/code/osp/cleanup/test/new-ospgl
+CMAKE_BINARY_DIR = /home/tatjam/code/osp/new-ospgl
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -121,7 +124,7 @@ rebuild_cache/fast: rebuild_cache
 
 # Special rule for the target list_install_components
 list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\" \"assimp-dev\" \"libassimp5.0.0-dev\""
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\" \"assimp-dev\" \"libassimp5.0.1-dev\""
 .PHONY : list_install_components
 
 # Special rule for the target list_install_components
@@ -143,14 +146,14 @@ install/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(CMAKE_COMMAND) -E cmake_progress_start /home/tatjam/code/osp/cleanup/test/new-ospgl/CMakeFiles /home/tatjam/code/osp/cleanup/test/new-ospgl/dep/bullet3/src/LinearMath/CMakeFiles/progress.marks
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f CMakeFiles/Makefile2 dep/bullet3/src/LinearMath/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tatjam/code/osp/cleanup/test/new-ospgl/CMakeFiles 0
+	cd /home/tatjam/code/osp/new-ospgl && $(CMAKE_COMMAND) -E cmake_progress_start /home/tatjam/code/osp/new-ospgl/CMakeFiles /home/tatjam/code/osp/new-ospgl/dep/bullet3/src/LinearMath/CMakeFiles/progress.marks
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dep/bullet3/src/LinearMath/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tatjam/code/osp/new-ospgl/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f CMakeFiles/Makefile2 dep/bullet3/src/LinearMath/clean
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dep/bullet3/src/LinearMath/clean
 .PHONY : clean
 
 # The main clean target
@@ -160,22 +163,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f CMakeFiles/Makefile2 dep/bullet3/src/LinearMath/preinstall
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dep/bullet3/src/LinearMath/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f CMakeFiles/Makefile2 dep/bullet3/src/LinearMath/preinstall
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dep/bullet3/src/LinearMath/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/tatjam/code/osp/new-ospgl && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/rule:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f CMakeFiles/Makefile2 dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/rule
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/rule
 .PHONY : dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/rule
 
 # Convenience name for target.
@@ -185,202 +188,202 @@ LinearMath: dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/rule
 
 # fast build rule for target.
 LinearMath/fast:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/build.make dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/build
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/build.make dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/build
 .PHONY : LinearMath/fast
 
 # target to build an object file
 TaskScheduler/btTaskScheduler.o:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/build.make dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/TaskScheduler/btTaskScheduler.o
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/build.make dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/TaskScheduler/btTaskScheduler.o
 .PHONY : TaskScheduler/btTaskScheduler.o
 
 # target to preprocess a source file
 TaskScheduler/btTaskScheduler.i:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/build.make dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/TaskScheduler/btTaskScheduler.i
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/build.make dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/TaskScheduler/btTaskScheduler.i
 .PHONY : TaskScheduler/btTaskScheduler.i
 
 # target to generate assembly for a file
 TaskScheduler/btTaskScheduler.s:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/build.make dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/TaskScheduler/btTaskScheduler.s
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/build.make dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/TaskScheduler/btTaskScheduler.s
 .PHONY : TaskScheduler/btTaskScheduler.s
 
 # target to build an object file
 TaskScheduler/btThreadSupportPosix.o:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/build.make dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/TaskScheduler/btThreadSupportPosix.o
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/build.make dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/TaskScheduler/btThreadSupportPosix.o
 .PHONY : TaskScheduler/btThreadSupportPosix.o
 
 # target to preprocess a source file
 TaskScheduler/btThreadSupportPosix.i:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/build.make dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/TaskScheduler/btThreadSupportPosix.i
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/build.make dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/TaskScheduler/btThreadSupportPosix.i
 .PHONY : TaskScheduler/btThreadSupportPosix.i
 
 # target to generate assembly for a file
 TaskScheduler/btThreadSupportPosix.s:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/build.make dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/TaskScheduler/btThreadSupportPosix.s
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/build.make dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/TaskScheduler/btThreadSupportPosix.s
 .PHONY : TaskScheduler/btThreadSupportPosix.s
 
 # target to build an object file
 TaskScheduler/btThreadSupportWin32.o:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/build.make dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/TaskScheduler/btThreadSupportWin32.o
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/build.make dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/TaskScheduler/btThreadSupportWin32.o
 .PHONY : TaskScheduler/btThreadSupportWin32.o
 
 # target to preprocess a source file
 TaskScheduler/btThreadSupportWin32.i:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/build.make dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/TaskScheduler/btThreadSupportWin32.i
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/build.make dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/TaskScheduler/btThreadSupportWin32.i
 .PHONY : TaskScheduler/btThreadSupportWin32.i
 
 # target to generate assembly for a file
 TaskScheduler/btThreadSupportWin32.s:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/build.make dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/TaskScheduler/btThreadSupportWin32.s
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/build.make dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/TaskScheduler/btThreadSupportWin32.s
 .PHONY : TaskScheduler/btThreadSupportWin32.s
 
 # target to build an object file
 btAlignedAllocator.o:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/build.make dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/btAlignedAllocator.o
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/build.make dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/btAlignedAllocator.o
 .PHONY : btAlignedAllocator.o
 
 # target to preprocess a source file
 btAlignedAllocator.i:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/build.make dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/btAlignedAllocator.i
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/build.make dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/btAlignedAllocator.i
 .PHONY : btAlignedAllocator.i
 
 # target to generate assembly for a file
 btAlignedAllocator.s:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/build.make dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/btAlignedAllocator.s
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/build.make dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/btAlignedAllocator.s
 .PHONY : btAlignedAllocator.s
 
 # target to build an object file
 btConvexHull.o:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/build.make dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/btConvexHull.o
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/build.make dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/btConvexHull.o
 .PHONY : btConvexHull.o
 
 # target to preprocess a source file
 btConvexHull.i:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/build.make dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/btConvexHull.i
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/build.make dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/btConvexHull.i
 .PHONY : btConvexHull.i
 
 # target to generate assembly for a file
 btConvexHull.s:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/build.make dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/btConvexHull.s
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/build.make dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/btConvexHull.s
 .PHONY : btConvexHull.s
 
 # target to build an object file
 btConvexHullComputer.o:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/build.make dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/btConvexHullComputer.o
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/build.make dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/btConvexHullComputer.o
 .PHONY : btConvexHullComputer.o
 
 # target to preprocess a source file
 btConvexHullComputer.i:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/build.make dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/btConvexHullComputer.i
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/build.make dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/btConvexHullComputer.i
 .PHONY : btConvexHullComputer.i
 
 # target to generate assembly for a file
 btConvexHullComputer.s:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/build.make dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/btConvexHullComputer.s
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/build.make dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/btConvexHullComputer.s
 .PHONY : btConvexHullComputer.s
 
 # target to build an object file
 btGeometryUtil.o:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/build.make dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/btGeometryUtil.o
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/build.make dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/btGeometryUtil.o
 .PHONY : btGeometryUtil.o
 
 # target to preprocess a source file
 btGeometryUtil.i:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/build.make dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/btGeometryUtil.i
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/build.make dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/btGeometryUtil.i
 .PHONY : btGeometryUtil.i
 
 # target to generate assembly for a file
 btGeometryUtil.s:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/build.make dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/btGeometryUtil.s
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/build.make dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/btGeometryUtil.s
 .PHONY : btGeometryUtil.s
 
 # target to build an object file
 btPolarDecomposition.o:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/build.make dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/btPolarDecomposition.o
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/build.make dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/btPolarDecomposition.o
 .PHONY : btPolarDecomposition.o
 
 # target to preprocess a source file
 btPolarDecomposition.i:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/build.make dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/btPolarDecomposition.i
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/build.make dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/btPolarDecomposition.i
 .PHONY : btPolarDecomposition.i
 
 # target to generate assembly for a file
 btPolarDecomposition.s:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/build.make dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/btPolarDecomposition.s
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/build.make dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/btPolarDecomposition.s
 .PHONY : btPolarDecomposition.s
 
 # target to build an object file
 btQuickprof.o:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/build.make dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/btQuickprof.o
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/build.make dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/btQuickprof.o
 .PHONY : btQuickprof.o
 
 # target to preprocess a source file
 btQuickprof.i:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/build.make dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/btQuickprof.i
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/build.make dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/btQuickprof.i
 .PHONY : btQuickprof.i
 
 # target to generate assembly for a file
 btQuickprof.s:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/build.make dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/btQuickprof.s
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/build.make dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/btQuickprof.s
 .PHONY : btQuickprof.s
 
 # target to build an object file
 btSerializer.o:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/build.make dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/btSerializer.o
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/build.make dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/btSerializer.o
 .PHONY : btSerializer.o
 
 # target to preprocess a source file
 btSerializer.i:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/build.make dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/btSerializer.i
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/build.make dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/btSerializer.i
 .PHONY : btSerializer.i
 
 # target to generate assembly for a file
 btSerializer.s:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/build.make dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/btSerializer.s
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/build.make dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/btSerializer.s
 .PHONY : btSerializer.s
 
 # target to build an object file
 btSerializer64.o:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/build.make dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/btSerializer64.o
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/build.make dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/btSerializer64.o
 .PHONY : btSerializer64.o
 
 # target to preprocess a source file
 btSerializer64.i:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/build.make dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/btSerializer64.i
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/build.make dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/btSerializer64.i
 .PHONY : btSerializer64.i
 
 # target to generate assembly for a file
 btSerializer64.s:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/build.make dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/btSerializer64.s
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/build.make dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/btSerializer64.s
 .PHONY : btSerializer64.s
 
 # target to build an object file
 btThreads.o:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/build.make dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/btThreads.o
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/build.make dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/btThreads.o
 .PHONY : btThreads.o
 
 # target to preprocess a source file
 btThreads.i:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/build.make dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/btThreads.i
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/build.make dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/btThreads.i
 .PHONY : btThreads.i
 
 # target to generate assembly for a file
 btThreads.s:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/build.make dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/btThreads.s
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/build.make dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/btThreads.s
 .PHONY : btThreads.s
 
 # target to build an object file
 btVector3.o:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/build.make dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/btVector3.o
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/build.make dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/btVector3.o
 .PHONY : btVector3.o
 
 # target to preprocess a source file
 btVector3.i:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/build.make dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/btVector3.i
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/build.make dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/btVector3.i
 .PHONY : btVector3.i
 
 # target to generate assembly for a file
 btVector3.s:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(MAKE) -f dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/build.make dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/btVector3.s
+	cd /home/tatjam/code/osp/new-ospgl && $(MAKE) $(MAKESILENT) -f dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/build.make dep/bullet3/src/LinearMath/CMakeFiles/LinearMath.dir/btVector3.s
 .PHONY : btVector3.s
 
 # Help Target
@@ -446,6 +449,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/tatjam/code/osp/cleanup/test/new-ospgl && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/tatjam/code/osp/new-ospgl && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

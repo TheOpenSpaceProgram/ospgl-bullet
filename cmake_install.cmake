@@ -1,4 +1,4 @@
-# Install script for directory: /home/tatjam/code/osp/cleanup/test/new-ospgl/dep/bullet3
+# Install script for directory: /home/tatjam/code/osp/new-ospgl/dep/bullet3
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -38,19 +38,19 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/tatjam/code/osp/cleanup/test/new-ospgl/dep/bullet3/bullet.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/tatjam/code/osp/new-ospgl/dep/bullet3/bullet.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/bullet" TYPE FILE FILES
-    "/home/tatjam/code/osp/cleanup/test/new-ospgl/dep/bullet3/UseBullet.cmake"
-    "/home/tatjam/code/osp/cleanup/test/new-ospgl/dep/bullet3/BulletConfig.cmake"
+    "/home/tatjam/code/osp/new-ospgl/dep/bullet3/UseBullet.cmake"
+    "/home/tatjam/code/osp/new-ospgl/dep/bullet3/BulletConfig.cmake"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/tatjam/code/osp/cleanup/test/new-ospgl/dep/bullet3/src/cmake_install.cmake")
+  include("/home/tatjam/code/osp/new-ospgl/dep/bullet3/src/cmake_install.cmake")
 
 endif()
 
