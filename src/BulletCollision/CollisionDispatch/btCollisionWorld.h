@@ -166,7 +166,11 @@ public:
 	struct LocalShapeInfo
 	{
 		int m_shapePart;
+		// Tatjam comment: Undocumented, this is also the compound collider child index
 		int m_triangleIndex;
+		// Tatjam modification: To allow checking for compound colliders
+		bool m_isCompound;
+
 
 		//const btCollisionShape*	m_shapeTemp;
 		//const btTransform*	m_shapeLocalTransform;
@@ -273,6 +277,8 @@ public:
 		}
 
 		btAlignedObjectArray<const btCollisionObject*> m_collisionObjects;
+		// Tatjam modification: Indicates child index of compound shape
+		btAlignedObjectArray<int> m_compoundIds;
 
 		btVector3 m_rayFromWorld;  //used to calculate hitPointWorld from hitFraction
 		btVector3 m_rayToWorld;
@@ -300,6 +306,16 @@ public:
 			hitPointWorld.setInterpolate3(m_rayFromWorld, m_rayToWorld, rayResult.m_hitFraction);
 			m_hitPointWorld.push_back(hitPointWorld);
 			m_hitFractions.push_back(rayResult.m_hitFraction);
+			// Tatjam comment: This is not documented in bullet, but m_triangleIndex
+			// contains the compound child number
+			if(rayResult.m_localShapeInfo && rayResult.m_localShapeInfo->m_isCompound)
+			{
+				m_compoundIds.push_back(rayResult.m_localShapeInfo->m_triangleIndex);
+			}
+			else
+			{
+				m_compoundIds.push_back(-1);
+			}
 			return m_closestHitFraction;
 		}
 	};
