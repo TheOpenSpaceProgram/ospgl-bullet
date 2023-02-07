@@ -389,7 +389,10 @@ void btCollisionWorld::rayTestSingleInternal(const btTransform& rayFromTrans, co
 			btVector3 rayToLocal = worldTocollisionObject * rayToTrans.getOrigin();
 
 			//			BT_PROFILE("rayTestConcave");
-			if (collisionShape->getShapeType() == TRIANGLE_MESH_SHAPE_PROXYTYPE)
+			// Tatjam hotfix: This prevents terrain from using the raycast accelerator, which breaks down as terrain is
+			// not really a TRIANGLE_MESH_SHAPE
+			bool is_terrain = strcmp(collisionShape->getName(), "PROCTERRAIN") == 0;
+			if (collisionShape->getShapeType() == TRIANGLE_MESH_SHAPE_PROXYTYPE && !is_terrain)
 			{
 				///optimized version for btBvhTriangleMeshShape
 				btBvhTriangleMeshShape* triangleMesh = (btBvhTriangleMeshShape*)collisionShape;
